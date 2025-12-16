@@ -283,18 +283,20 @@ def sidebar():
             st.markdown(f"**👤 {user['username']}**")
             st.caption(f"Role: {user['role'].title()}")
             
-            if st.button("🚪 Logout", use_container_width=True):
-                try:
-                    from src.services.auth import AuthService
-                    AuthService.logout(st.session_state.session_token)
-                except:
-                    pass
-                st.session_state.logged_in = False
-                st.session_state.user = None
-                st.session_state.session_token = None
-                st.session_state.messages = []
-                st.session_state.conversation_id = None
-                st.rerun()
+            # ===== LOGOUT DISABLED =====
+            # if st.button("🚪 Logout", use_container_width=True):
+            #     try:
+            #         from src.services.auth import AuthService
+            #         AuthService.logout(st.session_state.session_token)
+            #     except:
+            #         pass
+            #     st.session_state.logged_in = False
+            #     st.session_state.user = None
+            #     st.session_state.session_token = None
+            #     st.session_state.messages = []
+            #     st.session_state.conversation_id = None
+            #     st.rerun()
+            # ===== END LOGOUT DISABLED =====
             
             st.markdown("---")
         
@@ -1027,9 +1029,22 @@ def main():
     init_session()
     
     # Check if logged in
+    # ===== LOGIN DISABLED =====
+    # if not st.session_state.logged_in:
+    #     login_page()
+    #     return
+    # ===== END LOGIN DISABLED =====
+    
+    # Auto-login as guest user (bypass authentication)
     if not st.session_state.logged_in:
-        login_page()
-        return
+        st.session_state.logged_in = True
+        st.session_state.user = {
+            "id": "guest",
+            "username": "Guest User",
+            "role": "analyst",
+            "email": "guest@pharma.ai"
+        }
+        st.session_state.session_token = "guest-token"
     
     # Main app
     sidebar()
