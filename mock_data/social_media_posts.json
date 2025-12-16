@@ -1,0 +1,272 @@
+[
+    {
+        "molecule": "Semaglutide",
+        "source": "Reddit r/diabetes",
+        "post_text": "The nausea is unbearable. I can't keep any food down. Is this normal?",
+        "sentiment": -0.8,
+        "date": "2024-01-15",
+        "therapy_area": "Diabetes",
+        "complaint_theme": "Side effects"
+    },
+    {
+        "molecule": "Semaglutide",
+        "source": "PatientsLikeMe",
+        "post_text": "Lost 15lbs in a month! Best thing ever, despite the cost.",
+        "sentiment": 0.9,
+        "date": "2024-02-10",
+        "therapy_area": "Diabetes",
+        "complaint_theme": "Cost"
+    },
+    {
+        "molecule": "Semaglutide",
+        "source": "Reddit r/Ozempic",
+        "post_text": "Can't get my prescription filled, shortage everywhere. So frustrating!",
+        "sentiment": -0.7,
+        "date": "2024-03-05",
+        "therapy_area": "Diabetes",
+        "complaint_theme": "Availability"
+    },
+    {
+        "molecule": "Adalimumab",
+        "source": "Reddit r/CrohnsDisease",
+        "post_text": "The injection stings so much. I wish there was a pill version.",
+        "sentiment": -0.6,
+        "date": "2023-11-05",
+        "therapy_area": "Autoimmune",
+        "complaint_theme": "Ease of use"
+    },
+    {
+        "molecule": "Adalimumab",
+        "source": "PatientsLikeMe",
+        "post_text": "Had to switch to biosimilar because of insurance. Works just as well!",
+        "sentiment": 0.5,
+        "date": "2024-02-20",
+        "therapy_area": "Autoimmune",
+        "complaint_theme": "Insurance"
+    },
+    {
+        "molecule": "Pembrolizumab",
+        "source": "CancerSurvivorsNetwork",
+        "post_text": "Feeling very fatigued after the infusion, but scans are clear.",
+        "sentiment": 0.2,
+        "date": "2024-03-01",
+        "therapy_area": "Oncology",
+        "complaint_theme": "Side effects"
+    },
+    {
+        "molecule": "Pembrolizumab",
+        "source": "Reddit r/cancer",
+        "post_text": "The itching from Keytruda is driving me crazy. Using antihistamines daily.",
+        "sentiment": -0.4,
+        "date": "2024-04-12",
+        "therapy_area": "Oncology",
+        "complaint_theme": "Side effects"
+    },
+    {
+        "molecule": "Insulin",
+        "source": "Reddit r/diabetes",
+        "post_text": "Needle pain every day is exhausting. Why can't they make something easier?",
+        "sentiment": -0.7,
+        "date": "2024-04-12",
+        "therapy_area": "Diabetes",
+        "complaint_theme": "Needle pain"
+    },
+    {
+        "molecule": "Insulin",
+        "source": "PatientsLikeMe",
+        "post_text": "Keeping insulin refrigerated while traveling is a nightmare.",
+        "sentiment": -0.5,
+        "date": "2024-03-20",
+        "therapy_area": "Diabetes",
+        "complaint_theme": "Storage issues"
+    },
+    {
+        "molecule": "Insulin",
+        "source": "Reddit r/diabetes",
+        "post_text": "The pen is bulky and I hate carrying it around. Need something more discreet.",
+        "sentiment": -0.4,
+        "date": "2024-05-08",
+        "therapy_area": "Diabetes",
+        "complaint_theme": "Convenience"
+    },
+    {
+        "molecule": "Tiotropium",
+        "source": "Reddit r/COPD",
+        "post_text": "The Respimat device is confusing to use. Took me weeks to figure it out.",
+        "sentiment": -0.5,
+        "date": "2024-02-28",
+        "therapy_area": "Respiratory",
+        "complaint_theme": "Device complexity"
+    },
+    {
+        "molecule": "Pirfenidone",
+        "source": "PulmonaryFibrosis.org",
+        "post_text": "The photosensitivity is real. Can't go outside without full coverage now.",
+        "sentiment": -0.6,
+        "date": "2024-01-22",
+        "therapy_area": "Respiratory",
+        "complaint_theme": "Side effects"
+    },
+    {
+        "molecule": "Fluticasone",
+        "source": "Reddit r/Asthma",
+        "post_text": "Works great but leaves a bad aftertaste. Have to rinse my mouth every time.",
+        "sentiment": 0.1,
+        "date": "2024-04-05",
+        "therapy_area": "Respiratory",
+        "complaint_theme": "Ease of use"
+    },
+    {
+        "molecule": "Escitalopram",
+        "source": "Reddit r/anxiety",
+        "post_text": "First few weeks were rough, but now I feel so much better. Stick with it!",
+        "sentiment": 0.7,
+        "date": "2024-03-15",
+        "therapy_area": "CNS",
+        "complaint_theme": "Side effects"
+    },
+    {
+        "molecule": "Escitalopram",
+        "source": "PatientsLikeMe",
+        "post_text": "Weight gain has been significant. Doctor says it's common but it's affecting my mood.",
+        "sentiment": -0.5,
+        "date": "2024-04-20",
+        "therapy_area": "CNS",
+        "complaint_theme": "Side effects"
+    },
+    {
+        "molecule": "Escitalopram",
+        "source": "Reddit r/depression",
+        "post_text": "Sexual side effects are terrible. Considering switching medications.",
+        "sentiment": -0.7,
+        "date": "2024-05-10",
+        "therapy_area": "CNS",
+        "complaint_theme": "Side effects"
+    },
+    {
+        "molecule": "Pantoprazole",
+        "source": "Reddit r/GERD",
+        "post_text": "Been on this for 5 years, worried about long-term effects on kidneys.",
+        "sentiment": -0.3,
+        "date": "2024-02-25",
+        "therapy_area": "Gastrointestinal",
+        "complaint_theme": "Long-term safety"
+    },
+    {
+        "molecule": "Pantoprazole",
+        "source": "HealthUnlocked",
+        "post_text": "Works well but acid comes back worse when I try to stop.",
+        "sentiment": -0.4,
+        "date": "2024-03-30",
+        "therapy_area": "Gastrointestinal",
+        "complaint_theme": "Rebound effect"
+    },
+    {
+        "molecule": "Atorvastatin",
+        "source": "Reddit r/cholesterol",
+        "post_text": "Muscle aches are constant. Is this normal? Doctor says it's the statin.",
+        "sentiment": -0.6,
+        "date": "2024-04-08",
+        "therapy_area": "Cardiovascular",
+        "complaint_theme": "Side effects"
+    },
+    {
+        "molecule": "Metformin",
+        "source": "Reddit r/diabetes_t2",
+        "post_text": "GI issues are rough in the beginning. Extended release helped a lot.",
+        "sentiment": 0.2,
+        "date": "2024-03-18",
+        "therapy_area": "Diabetes",
+        "complaint_theme": "Side effects"
+    },
+    {
+        "molecule": "Metformin",
+        "source": "PatientsLikeMe",
+        "post_text": "Cheap, effective, been taking it for 10 years. No complaints!",
+        "sentiment": 0.9,
+        "date": "2024-05-01",
+        "therapy_area": "Diabetes",
+        "complaint_theme": "None"
+    },
+    {
+        "molecule": "Paracetamol",
+        "source": "Twitter Health",
+        "post_text": "Dolo 650 is the go-to for fever. Every household should have it.",
+        "sentiment": 0.8,
+        "date": "2024-06-15",
+        "therapy_area": "Analgesic",
+        "complaint_theme": "None"
+    },
+    {
+        "molecule": "Azithromycin",
+        "source": "Reddit r/health",
+        "post_text": "Why do doctors prescribe antibiotics for everything? Worried about resistance.",
+        "sentiment": -0.3,
+        "date": "2024-04-25",
+        "therapy_area": "Anti-infective",
+        "complaint_theme": "Overuse concerns"
+    },
+    {
+        "molecule": "Montelukast",
+        "source": "Reddit r/Asthma",
+        "post_text": "Gave my kid vivid nightmares. Had to switch to something else.",
+        "sentiment": -0.8,
+        "date": "2024-02-14",
+        "therapy_area": "Respiratory",
+        "complaint_theme": "Neuropsychiatric effects"
+    },
+    {
+        "molecule": "Montelukast",
+        "source": "PatientsLikeMe",
+        "post_text": "Works great for my exercise-induced asthma. Take it before workouts.",
+        "sentiment": 0.7,
+        "date": "2024-05-20",
+        "therapy_area": "Respiratory",
+        "complaint_theme": "None"
+    },
+    {
+        "molecule": "Amlodipine",
+        "source": "Reddit r/bloodpressure",
+        "post_text": "Ankle swelling is terrible. Switched to different class of BP meds.",
+        "sentiment": -0.6,
+        "date": "2024-03-28",
+        "therapy_area": "Cardiovascular",
+        "complaint_theme": "Side effects"
+    },
+    {
+        "molecule": "Rivaroxaban",
+        "source": "AFib Community",
+        "post_text": "No more monthly INR tests! Such a relief compared to warfarin.",
+        "sentiment": 0.8,
+        "date": "2024-04-15",
+        "therapy_area": "Cardiovascular",
+        "complaint_theme": "Convenience"
+    },
+    {
+        "molecule": "Rivaroxaban",
+        "source": "Reddit r/bloodthinners",
+        "post_text": "Worried about reversal agents not being available at all hospitals.",
+        "sentiment": -0.4,
+        "date": "2024-05-22",
+        "therapy_area": "Cardiovascular",
+        "complaint_theme": "Safety concerns"
+    },
+    {
+        "molecule": "Trastuzumab",
+        "source": "BreastCancer.org",
+        "post_text": "Heart monitoring every 3 months is stressful, but the drug saved my life.",
+        "sentiment": 0.4,
+        "date": "2024-03-10",
+        "therapy_area": "Oncology",
+        "complaint_theme": "Monitoring burden"
+    },
+    {
+        "molecule": "Lenalidomide",
+        "source": "Myeloma Support",
+        "post_text": "The REMS program for getting this drug is incredibly complex.",
+        "sentiment": -0.5,
+        "date": "2024-02-05",
+        "therapy_area": "Oncology",
+        "complaint_theme": "Access complexity"
+    }
+]

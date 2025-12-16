@@ -1,0 +1,170 @@
+[
+    {
+        "molecule": "Sitagliptin",
+        "competitor": "Sun Pharma",
+        "predicted_strategy": "Launch generic at 60% discount immediately upon patent expiry.",
+        "likelihood": "High",
+        "impact": "Severe erosion of market share within 6 months."
+    },
+    {
+        "molecule": "Sitagliptin",
+        "competitor": "Dr. Reddy's",
+        "predicted_strategy": "Focus on FDC combinations with metformin to differentiate from plain generic.",
+        "likelihood": "High",
+        "impact": "Capture compliance-focused prescriber segment."
+    },
+    {
+        "molecule": "Pembrolizumab",
+        "competitor": "Roche",
+        "predicted_strategy": "Accelerate clinical trials for subcutaneous PD-L1 inhibitor to capture convenience segment.",
+        "likelihood": "Medium",
+        "impact": "Loss of naive patients who prefer easier administration."
+    },
+    {
+        "molecule": "Pembrolizumab",
+        "competitor": "BMS (Nivolumab)",
+        "predicted_strategy": "Expand combination therapy approvals to match Keytruda's indication portfolio.",
+        "likelihood": "High",
+        "impact": "Head-to-head competition in overlapping indications."
+    },
+    {
+        "molecule": "Rivaroxaban",
+        "competitor": "Bayer (Authorized Generic)",
+        "predicted_strategy": "Launch authorized generic to discourage other entrants.",
+        "likelihood": "High",
+        "impact": "Maintains some revenue stream but lowers margin."
+    },
+    {
+        "molecule": "Rivaroxaban",
+        "competitor": "Teva",
+        "predicted_strategy": "Aggressive pricing strategy at 70% discount to gain market share quickly.",
+        "likelihood": "High",
+        "impact": "Price war likely, margin compression across market."
+    },
+    {
+        "molecule": "Rivaroxaban",
+        "competitor": "Sun Pharma",
+        "predicted_strategy": "Launch with strong field force push in tier 2/3 cities in India.",
+        "likelihood": "Medium",
+        "impact": "Capture untapped market segments in emerging markets."
+    },
+    {
+        "molecule": "Pirfenidone",
+        "competitor": "Cipla",
+        "predicted_strategy": "Launch generic with patient assistance program and pulmonologist tie-ups.",
+        "likelihood": "Medium",
+        "impact": "Price-sensitive patients may switch; maintain differentiation through services."
+    },
+    {
+        "molecule": "Tiotropium",
+        "competitor": "Cipla",
+        "predicted_strategy": "Launch generic dry powder inhaler as Respimat alternative for simpler use.",
+        "likelihood": "High",
+        "impact": "Device preference may shift to simpler alternatives."
+    },
+    {
+        "molecule": "Fluticasone",
+        "competitor": "Multiple Generics",
+        "predicted_strategy": "Commoditization with price-based competition.",
+        "likelihood": "High",
+        "impact": "Margin pressure, differentiation only through FDCs and devices."
+    },
+    {
+        "molecule": "Semaglutide",
+        "competitor": "Eli Lilly (Tirzepatide)",
+        "predicted_strategy": "Position as more efficacious dual-agonist with superior weight loss data.",
+        "likelihood": "High",
+        "impact": "Fierce competition for obesity market share; potential to overtake in some segments."
+    },
+    {
+        "molecule": "Semaglutide",
+        "competitor": "Novo Nordisk (Internal)",
+        "predicted_strategy": "Launch oral formulation to capture needle-averse patients.",
+        "likelihood": "High",
+        "impact": "Expands addressable market but cannibalizes injectable revenue."
+    },
+    {
+        "molecule": "Adalimumab",
+        "competitor": "Biocon/Viatris",
+        "predicted_strategy": "Aggressive biosimilar pricing in India at 50% discount.",
+        "likelihood": "High",
+        "impact": "Rapid market share capture in price-sensitive emerging markets."
+    },
+    {
+        "molecule": "Adalimumab",
+        "competitor": "AbbVie (Upadacitinib)",
+        "predicted_strategy": "Shift prescribers to oral JAK inhibitor as convenient alternative.",
+        "likelihood": "Medium",
+        "impact": "Gradual migration away from injectables in mild-to-moderate cases."
+    },
+    {
+        "molecule": "Escitalopram",
+        "competitor": "Multiple Generics",
+        "predicted_strategy": "Price erosion with commodity positioning.",
+        "likelihood": "High",
+        "impact": "Brand differentiation only through extended-release formulations."
+    },
+    {
+        "molecule": "Pantoprazole",
+        "competitor": "Takeda (Vonoprazan)",
+        "predicted_strategy": "Position next-gen PCAB as superior acid suppression with faster onset.",
+        "likelihood": "Medium",
+        "impact": "Premium segment capture from refractory GERD patients."
+    },
+    {
+        "molecule": "Atorvastatin",
+        "competitor": "Multiple Generics",
+        "predicted_strategy": "Complete commoditization; compete on price and distribution.",
+        "likelihood": "High",
+        "impact": "Zero brand premium; differentiation only through FDCs."
+    },
+    {
+        "molecule": "Trastuzumab",
+        "competitor": "Biocon/Mylan",
+        "predicted_strategy": "Biosimilar launch at 40% discount with oncologist education programs.",
+        "likelihood": "High",
+        "impact": "Significant market share shift to biosimilars in cost-sensitive markets."
+    },
+    {
+        "molecule": "Trastuzumab",
+        "competitor": "Daiichi Sankyo (T-DXd)",
+        "predicted_strategy": "Position ADC as more effective in later lines; expand to earlier lines with new data.",
+        "likelihood": "High",
+        "impact": "Threat to standard HER2 therapy in salvage settings."
+    },
+    {
+        "molecule": "Lenalidomide",
+        "competitor": "Natco/Teva",
+        "predicted_strategy": "Generic launch immediately post-settlement; aggressive pricing.",
+        "likelihood": "High",
+        "impact": "Rapid revenue decline; Bristol Myers Celgene loses over 70% of sales."
+    },
+    {
+        "molecule": "Montelukast",
+        "competitor": "Multiple Generics",
+        "predicted_strategy": "Commoditization with FDC focus on levocetirizine combinations.",
+        "likelihood": "High",
+        "impact": "Brand competition only through combination offerings."
+    },
+    {
+        "molecule": "Amlodipine",
+        "competitor": "Multiple Generics",
+        "predicted_strategy": "Complete commoditization; differentiation through triple combos with ARBs/statins.",
+        "likelihood": "High",
+        "impact": "Polypill combinations capture adherence-focused prescribers."
+    },
+    {
+        "molecule": "Paracetamol",
+        "competitor": "GSK (Calpol)",
+        "predicted_strategy": "Maintain pediatric formulation leadership; expand flavors and formats.",
+        "likelihood": "Medium",
+        "impact": "Segment-specific competition in pediatric market."
+    },
+    {
+        "molecule": "Azithromycin",
+        "competitor": "Multiple Generics",
+        "predicted_strategy": "Price-based competition; Z-pack convenience positioning.",
+        "likelihood": "High",
+        "impact": "Commoditized market with thin margins."
+    }
+]

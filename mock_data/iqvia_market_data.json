@@ -1,0 +1,335 @@
+[
+  {
+    "molecule": "Pembrolizumab",
+    "brand": "Keytruda",
+    "region": "Global",
+    "therapy_area": "Oncology",
+    "indication": "NSCLC, Melanoma, TNBC",
+    "market_size_usd_mn": 25000,
+    "cagr_percent": 12.5,
+    "top_competitors": [
+      "Nivolumab",
+      "Atezolizumab",
+      "Durvalumab"
+    ],
+    "generic_penetration": "Low",
+    "patient_burden": "High",
+    "competition_level": "Low"
+  },
+  {
+    "molecule": "Sitagliptin",
+    "brand": "Januvia",
+    "region": "India",
+    "therapy_area": "Diabetes",
+    "indication": "Type 2 Diabetes",
+    "market_size_usd_mn": 150,
+    "cagr_percent": 8.0,
+    "top_competitors": [
+      "Vildagliptin",
+      "Teneligliptin",
+      "Linagliptin"
+    ],
+    "generic_penetration": "High",
+    "patient_burden": "Very High",
+    "competition_level": "High"
+  },
+  {
+    "molecule": "Rivaroxaban",
+    "brand": "Xarelto",
+    "region": "US",
+    "therapy_area": "Cardiovascular",
+    "indication": "DVT, PE, Stroke Prevention",
+    "market_size_usd_mn": 4000,
+    "cagr_percent": 5.2,
+    "top_competitors": [
+      "Apixaban",
+      "Warfarin",
+      "Edoxaban"
+    ],
+    "generic_penetration": "Medium",
+    "patient_burden": "High",
+    "competition_level": "Medium"
+  },
+  {
+    "molecule": "Pirfenidone",
+    "brand": "Esbriet",
+    "region": "India",
+    "therapy_area": "Respiratory",
+    "indication": "Idiopathic Pulmonary Fibrosis",
+    "market_size_usd_mn": 45,
+    "cagr_percent": 18.5,
+    "top_competitors": [
+      "Nintedanib"
+    ],
+    "generic_penetration": "Low",
+    "patient_burden": "High",
+    "competition_level": "Low"
+  },
+  {
+    "molecule": "Roflumilast",
+    "brand": "Daxas",
+    "region": "India",
+    "therapy_area": "Respiratory",
+    "indication": "Severe COPD",
+    "market_size_usd_mn": 28,
+    "cagr_percent": 14.2,
+    "top_competitors": [
+      "Theophylline"
+    ],
+    "generic_penetration": "Low",
+    "patient_burden": "Very High",
+    "competition_level": "Low"
+  },
+  {
+    "molecule": "Fluticasone",
+    "brand": "Flovent/Flonase",
+    "region": "India",
+    "therapy_area": "Respiratory",
+    "indication": "Asthma, Allergic Rhinitis",
+    "market_size_usd_mn": 320,
+    "cagr_percent": 6.1,
+    "top_competitors": [
+      "Budesonide",
+      "Beclometasone",
+      "Ciclesonide",
+      "Mometasone"
+    ],
+    "generic_penetration": "High",
+    "patient_burden": "Very High",
+    "competition_level": "High"
+  },
+  {
+    "molecule": "Omalizumab",
+    "brand": "Xolair",
+    "region": "India",
+    "therapy_area": "Respiratory",
+    "indication": "Severe Allergic Asthma",
+    "market_size_usd_mn": 65,
+    "cagr_percent": 22.0,
+    "top_competitors": [
+      "Mepolizumab",
+      "Benralizumab",
+      "Dupilumab"
+    ],
+    "generic_penetration": "Low",
+    "patient_burden": "High",
+    "competition_level": "Low"
+  },
+  {
+    "molecule": "Tiotropium",
+    "brand": "Spiriva",
+    "region": "India",
+    "therapy_area": "Respiratory",
+    "indication": "COPD Maintenance",
+    "market_size_usd_mn": 85,
+    "cagr_percent": 9.8,
+    "top_competitors": [
+      "Glycopyrronium",
+      "Umeclidinium",
+      "Aclidinium"
+    ],
+    "generic_penetration": "Medium",
+    "patient_burden": "Very High",
+    "competition_level": "Medium"
+  },
+  {
+    "molecule": "Paracetamol",
+    "brand": "Dolo 650",
+    "region": "India",
+    "therapy_area": "Analgesic",
+    "indication": "Fever, Pain, Headache",
+    "market_size_usd_mn": 420,
+    "cagr_percent": 6.2,
+    "top_competitors": [
+      "Calpol",
+      "Crocin",
+      "Tylenol"
+    ],
+    "generic_penetration": "High",
+    "patient_burden": "Very High",
+    "competition_level": "High"
+  },
+  {
+    "molecule": "Azithromycin",
+    "brand": "Azithral",
+    "region": "India",
+    "therapy_area": "Anti-infective",
+    "indication": "Respiratory Infections, UTI",
+    "market_size_usd_mn": 380,
+    "cagr_percent": 4.8,
+    "top_competitors": [
+      "Clarithromycin",
+      "Amoxicillin",
+      "Levofloxacin"
+    ],
+    "generic_penetration": "High",
+    "patient_burden": "High",
+    "competition_level": "High"
+  },
+  {
+    "molecule": "Pantoprazole",
+    "brand": "Pan 40",
+    "region": "India",
+    "therapy_area": "Gastrointestinal",
+    "indication": "GERD, Peptic Ulcer",
+    "market_size_usd_mn": 520,
+    "cagr_percent": 7.3,
+    "top_competitors": [
+      "Omeprazole",
+      "Esomeprazole",
+      "Rabeprazole"
+    ],
+    "generic_penetration": "High",
+    "patient_burden": "High",
+    "competition_level": "High"
+  },
+  {
+    "molecule": "Atorvastatin",
+    "brand": "Lipitor/Atorva",
+    "region": "Global",
+    "therapy_area": "Cardiovascular",
+    "indication": "Hypercholesterolemia, CVD Prevention",
+    "market_size_usd_mn": 2800,
+    "cagr_percent": 3.5,
+    "top_competitors": [
+      "Rosuvastatin",
+      "Simvastatin",
+      "Pravastatin"
+    ],
+    "generic_penetration": "High",
+    "patient_burden": "Very High",
+    "competition_level": "High"
+  },
+  {
+    "molecule": "Metformin",
+    "brand": "Glycomet/Glucophage",
+    "region": "Global",
+    "therapy_area": "Diabetes",
+    "indication": "Type 2 Diabetes",
+    "market_size_usd_mn": 890,
+    "cagr_percent": 4.2,
+    "top_competitors": [
+      "Glimepiride",
+      "Gliclazide"
+    ],
+    "generic_penetration": "High",
+    "patient_burden": "Very High",
+    "competition_level": "High"
+  },
+  {
+    "molecule": "Semaglutide",
+    "brand": "Ozempic/Wegovy",
+    "region": "Global",
+    "therapy_area": "Diabetes",
+    "indication": "Type 2 Diabetes, Obesity",
+    "market_size_usd_mn": 18500,
+    "cagr_percent": 45.2,
+    "top_competitors": [
+      "Tirzepatide",
+      "Liraglutide",
+      "Dulaglutide"
+    ],
+    "generic_penetration": "Low",
+    "patient_burden": "Very High",
+    "competition_level": "Low"
+  },
+  {
+    "molecule": "Adalimumab",
+    "brand": "Humira",
+    "region": "Global",
+    "therapy_area": "Autoimmune",
+    "indication": "RA, Psoriasis, Crohn's",
+    "market_size_usd_mn": 15200,
+    "cagr_percent": -8.5,
+    "top_competitors": [
+      "Biosimilars",
+      "Upadacitinib",
+      "Secukinumab"
+    ],
+    "generic_penetration": "Medium",
+    "patient_burden": "High",
+    "competition_level": "High"
+  },
+  {
+    "molecule": "Escitalopram",
+    "brand": "Lexapro/Nexito",
+    "region": "India",
+    "therapy_area": "CNS",
+    "indication": "Depression, Anxiety",
+    "market_size_usd_mn": 210,
+    "cagr_percent": 11.5,
+    "top_competitors": [
+      "Sertraline",
+      "Fluoxetine",
+      "Venlafaxine"
+    ],
+    "generic_penetration": "High",
+    "patient_burden": "High",
+    "competition_level": "High"
+  },
+  {
+    "molecule": "Montelukast",
+    "brand": "Singulair/Montair",
+    "region": "India",
+    "therapy_area": "Respiratory",
+    "indication": "Asthma, Allergic Rhinitis",
+    "market_size_usd_mn": 280,
+    "cagr_percent": 8.9,
+    "top_competitors": [
+      "Zafirlukast"
+    ],
+    "generic_penetration": "High",
+    "patient_burden": "Very High",
+    "competition_level": "Medium"
+  },
+  {
+    "molecule": "Trastuzumab",
+    "brand": "Herceptin",
+    "region": "Global",
+    "therapy_area": "Oncology",
+    "indication": "HER2+ Breast Cancer",
+    "market_size_usd_mn": 5800,
+    "cagr_percent": -2.5,
+    "top_competitors": [
+      "Biosimilars",
+      "Pertuzumab",
+      "T-DM1"
+    ],
+    "generic_penetration": "Medium",
+    "patient_burden": "High",
+    "competition_level": "Medium"
+  },
+  {
+    "molecule": "Lenalidomide",
+    "brand": "Revlimid",
+    "region": "Global",
+    "therapy_area": "Oncology",
+    "indication": "Multiple Myeloma, MDS",
+    "market_size_usd_mn": 9200,
+    "cagr_percent": -15.0,
+    "top_competitors": [
+      "Pomalidomide",
+      "Generics"
+    ],
+    "generic_penetration": "Medium",
+    "patient_burden": "High",
+    "competition_level": "Medium"
+  },
+  {
+    "molecule": "Amlodipine",
+    "brand": "Norvasc/Amlopin",
+    "region": "India",
+    "therapy_area": "Cardiovascular",
+    "indication": "Hypertension, Angina",
+    "market_size_usd_mn": 340,
+    "cagr_percent": 5.8,
+    "top_competitors": [
+      "Nifedipine",
+      "Cilnidipine",
+      "Telmisartan"
+    ],
+    "generic_penetration": "High",
+    "patient_burden": "Very High",
+    "competition_level": "High"
+  }
+]

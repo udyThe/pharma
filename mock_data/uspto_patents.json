@@ -1,0 +1,288 @@
+[
+    {
+        "molecule": "Pembrolizumab",
+        "patents": [
+            {
+                "patent_number": "US8354509",
+                "type": "Composition of Matter",
+                "expiry_date": "2028-06-15",
+                "status": "Active"
+            },
+            {
+                "patent_number": "US9073994",
+                "type": "Method of Use",
+                "expiry_date": "2032-01-20",
+                "status": "Active"
+            }
+        ]
+    },
+    {
+        "molecule": "Sitagliptin",
+        "patents": [
+            {
+                "patent_number": "US7326708",
+                "type": "Composition of Matter",
+                "expiry_date": "2022-11-24",
+                "status": "Expired"
+            },
+            {
+                "patent_number": "US7687625",
+                "type": "Process",
+                "expiry_date": "2023-03-15",
+                "status": "Expired"
+            }
+        ]
+    },
+    {
+        "molecule": "Rivaroxaban",
+        "patents": [
+            {
+                "patent_number": "US7157456",
+                "type": "Composition of Matter",
+                "expiry_date": "2024-08-28",
+                "status": "Expired"
+            },
+            {
+                "patent_number": "US8318800",
+                "type": "Formulation",
+                "expiry_date": "2027-05-15",
+                "status": "Active"
+            }
+        ]
+    },
+    {
+        "molecule": "Pirfenidone",
+        "patents": [
+            {
+                "patent_number": "US5310562",
+                "type": "Composition of Matter",
+                "expiry_date": "2014-05-10",
+                "status": "Expired"
+            },
+            {
+                "patent_number": "US8609701",
+                "type": "Formulation",
+                "expiry_date": "2026-08-15",
+                "status": "Active"
+            }
+        ]
+    },
+    {
+        "molecule": "Roflumilast",
+        "patents": [
+            {
+                "patent_number": "US5712298",
+                "type": "Composition of Matter",
+                "expiry_date": "2020-06-22",
+                "status": "Expired"
+            }
+        ]
+    },
+    {
+        "molecule": "Tiotropium",
+        "patents": [
+            {
+                "patent_number": "US5610163",
+                "type": "Composition of Matter",
+                "expiry_date": "2021-01-14",
+                "status": "Expired"
+            },
+            {
+                "patent_number": "US7309707",
+                "type": "Formulation (Respimat)",
+                "expiry_date": "2025-09-20",
+                "status": "Active"
+            }
+        ]
+    },
+    {
+        "molecule": "Omalizumab",
+        "patents": [
+            {
+                "patent_number": "US6267958",
+                "type": "Composition of Matter",
+                "expiry_date": "2017-07-26",
+                "status": "Expired"
+            },
+            {
+                "patent_number": "US8153765",
+                "type": "Formulation",
+                "expiry_date": "2028-11-30",
+                "status": "Active"
+            }
+        ]
+    },
+    {
+        "molecule": "Fluticasone",
+        "patents": [
+            {
+                "patent_number": "US4335121",
+                "type": "Composition of Matter",
+                "expiry_date": "1999-06-15",
+                "status": "Expired"
+            }
+        ]
+    },
+    {
+        "molecule": "Paracetamol",
+        "patents": [
+            {
+                "patent_number": "Generic",
+                "type": "No patent protection",
+                "expiry_date": "N/A",
+                "status": "Expired"
+            }
+        ]
+    },
+    {
+        "molecule": "Azithromycin",
+        "patents": [
+            {
+                "patent_number": "US4517359",
+                "type": "Composition of Matter",
+                "expiry_date": "2005-05-14",
+                "status": "Expired"
+            }
+        ]
+    },
+    {
+        "molecule": "Pantoprazole",
+        "patents": [
+            {
+                "patent_number": "US4758579",
+                "type": "Composition of Matter",
+                "expiry_date": "2010-07-19",
+                "status": "Expired"
+            }
+        ]
+    },
+    {
+        "molecule": "Atorvastatin",
+        "patents": [
+            {
+                "patent_number": "US4681893",
+                "type": "Composition of Matter",
+                "expiry_date": "2011-11-20",
+                "status": "Expired"
+            }
+        ]
+    },
+    {
+        "molecule": "Metformin",
+        "patents": [
+            {
+                "patent_number": "Generic",
+                "type": "No patent protection",
+                "expiry_date": "N/A",
+                "status": "Expired"
+            }
+        ]
+    },
+    {
+        "molecule": "Semaglutide",
+        "patents": [
+            {
+                "patent_number": "US8129343",
+                "type": "Composition of Matter",
+                "expiry_date": "2031-12-20",
+                "status": "Active"
+            },
+            {
+                "patent_number": "US9474780",
+                "type": "Oral Formulation",
+                "expiry_date": "2033-05-15",
+                "status": "Active"
+            },
+            {
+                "patent_number": "US10471155",
+                "type": "Method of Use (Obesity)",
+                "expiry_date": "2034-08-10",
+                "status": "Active"
+            }
+        ]
+    },
+    {
+        "molecule": "Adalimumab",
+        "patents": [
+            {
+                "patent_number": "US6090382",
+                "type": "Composition of Matter",
+                "expiry_date": "2016-12-31",
+                "status": "Expired"
+            },
+            {
+                "patent_number": "US7223394",
+                "type": "Formulation",
+                "expiry_date": "2023-09-08",
+                "status": "Expired"
+            }
+        ]
+    },
+    {
+        "molecule": "Escitalopram",
+        "patents": [
+            {
+                "patent_number": "US5401838",
+                "type": "Composition of Matter",
+                "expiry_date": "2012-03-14",
+                "status": "Expired"
+            }
+        ]
+    },
+    {
+        "molecule": "Montelukast",
+        "patents": [
+            {
+                "patent_number": "US5565473",
+                "type": "Composition of Matter",
+                "expiry_date": "2012-08-03",
+                "status": "Expired"
+            }
+        ]
+    },
+    {
+        "molecule": "Trastuzumab",
+        "patents": [
+            {
+                "patent_number": "US5821337",
+                "type": "Composition of Matter",
+                "expiry_date": "2019-06-18",
+                "status": "Expired"
+            },
+            {
+                "patent_number": "US8337856",
+                "type": "Subcutaneous Formulation",
+                "expiry_date": "2027-04-12",
+                "status": "Active"
+            }
+        ]
+    },
+    {
+        "molecule": "Lenalidomide",
+        "patents": [
+            {
+                "patent_number": "US5635517",
+                "type": "Composition of Matter",
+                "expiry_date": "2022-01-12",
+                "status": "Expired"
+            },
+            {
+                "patent_number": "US8404717",
+                "type": "Method of Use",
+                "expiry_date": "2024-03-25",
+                "status": "Expired"
+            }
+        ]
+    },
+    {
+        "molecule": "Amlodipine",
+        "patents": [
+            {
+                "patent_number": "US4572909",
+                "type": "Composition of Matter",
+                "expiry_date": "2007-09-25",
+                "status": "Expired"
+            }
+        ]
+    }
+]

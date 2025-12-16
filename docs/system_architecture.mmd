@@ -1,0 +1,55 @@
+flowchart LR
+    %% Entry points
+    U[Streamlit UI] -->|submit /jobs| API[FastAPI Orchestrator]
+    U -->|poll status| API
+
+    %% Queue & workers
+    API -->|enqueue| CELERY[Redis / Celery Broker]
+    CELERY --> WPOOL[Agent Workers Pool (CrewAI)]
+
+    %% Master orchestrator inside workers
+    subgraph Workers
+        WPOOL --> MGR[Master Orchestrator]
+        MGR --> IQ[I q v i a Agent]
+        MGR --> PAT[Patent Agent]
+        MGR --> CLIN[Clinical Agent]
+        MGR --> SOC[Social Agent]
+        MGR --> COMP[Competitor Agent]
+        MGR --> INT[Internal Agent]
+        MGR --> WEB[Web Agent]
+    end
+
+    %% LLM + context
+    WPOOL -->|LLM calls| GROQ[Groq Llama 3 70B]
+    WPOOL -->|cache/state| REDIS[Redis]
+    INT -->|RAG query| VDB[Vector DB]
+
+    %% External data fetch
+    subgraph Data APIs
+        MARKET[Market API]
+        PATENTAPI[Patent API]
+        CLINICALAPI[Clinical API]
+        SOCIALAPI[Social API]
+        COMPAPI[Competitor API]
+    end
+    API -->|httpx fetch| MARKET
+    API -->|httpx fetch| PATENTAPI
+    API -->|httpx fetch| CLINICALAPI
+    API -->|httpx fetch| SOCIALAPI
+    API -->|httpx fetch| COMPAPI
+
+    %% Events and artifacts
+    WPOOL -->|events (agent.completed)| KAFKA[Kafka]
+    KAFKA --> W2[Downstream Workers/Consumers]
+    WPOOL -->|artifacts| STORE[(Object Storage)]
+
+    %% Status & polling
+    API -->|poll /jobs/{id}| REDIS
+
+    %% Observability
+    subgraph Observability
+        LOGS[Structured Logs / OTel]
+    end
+    API --> LOGS
+    WPOOL --> LOGS
+    KAFKA --> LOGS

@@ -1,0 +1,72 @@
+[
+    {
+        "id": 1,
+        "category": "Strategic - Whitespace Analysis",
+        "query": "Which respiratory diseases show low competition but high patient burden in India?",
+        "expected_intent": "market_analysis",
+        "complexity": "High"
+    },
+    {
+        "id": 2,
+        "category": "Strategic - Repurposing",
+        "query": "Identify potential repurposing opportunities for Pembrolizumab beyond its current indications.",
+        "expected_intent": "innovation_search",
+        "complexity": "High"
+    },
+    {
+        "id": 3,
+        "category": "Tactical - Patent Check",
+        "query": "When does the composition of matter patent for Sitagliptin expire in the US?",
+        "expected_intent": "patent_search",
+        "complexity": "Low"
+    },
+    {
+        "id": 4,
+        "category": "Tactical - Clinical Landscape",
+        "query": "List all Phase III trials for Rivaroxaban competitors in Atrial Fibrillation.",
+        "expected_intent": "clinical_search",
+        "complexity": "Medium"
+    },
+    {
+        "id": 5,
+        "category": "Clarification / Follow-up",
+        "query": "Do you want this by region or MoA?",
+        "context": "User asked for 'competitor landscape'",
+        "type": "system_clarification"
+    },
+    {
+        "id": 6,
+        "category": "Non-linear Input",
+        "query": "Also check for biosimilar competition.",
+        "context": "User previously asked about market size",
+        "type": "refinement"
+    },
+    {
+        "id": 7,
+        "category": "Strategic - Market Entry",
+        "query": "Evaluate the feasibility of launching a generic version of Apixaban in Brazil considering patent barriers.",
+        "expected_intent": "feasibility_study",
+        "complexity": "High"
+    },
+    {
+        "id": 8,
+        "category": "Scientific - Guidelines",
+        "query": "What are the latest FDA guidelines for biosimilar interchangeability?",
+        "expected_intent": "web_search",
+        "complexity": "Medium"
+    },
+    {
+        "id": 9,
+        "category": "Internal Knowledge",
+        "query": "Summarize our internal strategy for the diabetes portfolio in 2025.",
+        "expected_intent": "internal_rag",
+        "complexity": "Medium"
+    },
+    {
+        "id": 10,
+        "category": "Complex - Multi-agent",
+        "query": "Find me a molecule with high import volume in India, expired patents, and growing market demand.",
+        "expected_intent": "multi_agent_synthesis",
+        "complexity": "Very High"
+    }
+]

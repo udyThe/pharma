@@ -1,0 +1,428 @@
+[
+    {
+        "indication": "Non-Small Cell Lung Cancer",
+        "therapy_area": "Oncology",
+        "patient_burden_score": 9.1,
+        "active_trials": [
+            {
+                "nct_id": "NCT01234567",
+                "phase": "Phase III",
+                "drug_name": "Pembrolizumab",
+                "sponsor": "Merck Sharp & Dohme"
+            },
+            {
+                "nct_id": "NCT07654321",
+                "phase": "Phase II",
+                "drug_name": "Novel IO Agent",
+                "sponsor": "Roche"
+            },
+            {
+                "nct_id": "NCT05891234",
+                "phase": "Phase III",
+                "drug_name": "Pembrolizumab + Lenvatinib",
+                "sponsor": "Merck/Eisai"
+            }
+        ],
+        "competition_density": "Medium",
+        "unmet_need": "High"
+    },
+    {
+        "indication": "Type 2 Diabetes",
+        "therapy_area": "Diabetes",
+        "patient_burden_score": 8.5,
+        "active_trials": [
+            {
+                "nct_id": "NCT09876543",
+                "phase": "Phase IV",
+                "drug_name": "Sitagliptin",
+                "sponsor": "Merck"
+            },
+            {
+                "nct_id": "NCT04789012",
+                "phase": "Phase III",
+                "drug_name": "Semaglutide Oral",
+                "sponsor": "Novo Nordisk"
+            },
+            {
+                "nct_id": "NCT05123890",
+                "phase": "Phase III",
+                "drug_name": "Tirzepatide",
+                "sponsor": "Eli Lilly"
+            }
+        ],
+        "competition_density": "High",
+        "unmet_need": "Medium"
+    },
+    {
+        "indication": "Idiopathic Pulmonary Fibrosis",
+        "therapy_area": "Respiratory",
+        "patient_burden_score": 8.5,
+        "active_trials": [
+            {
+                "nct_id": "NCT04123456",
+                "phase": "Phase III",
+                "drug_name": "Pirfenidone",
+                "sponsor": "Roche"
+            },
+            {
+                "nct_id": "NCT05234890",
+                "phase": "Phase II",
+                "drug_name": "Pamrevlumab",
+                "sponsor": "FibroGen"
+            }
+        ],
+        "competition_density": "Low",
+        "unmet_need": "High"
+    },
+    {
+        "indication": "COPD",
+        "therapy_area": "Respiratory",
+        "patient_burden_score": 9.2,
+        "active_trials": [
+            {
+                "nct_id": "NCT04234567",
+                "phase": "Phase II",
+                "drug_name": "Roflumilast Extended Release",
+                "sponsor": "AstraZeneca"
+            },
+            {
+                "nct_id": "NCT04234568",
+                "phase": "Phase III",
+                "drug_name": "Ensifentrine",
+                "sponsor": "Verona Pharma"
+            },
+            {
+                "nct_id": "NCT05345678",
+                "phase": "Phase III",
+                "drug_name": "Tezepelumab",
+                "sponsor": "AstraZeneca"
+            }
+        ],
+        "competition_density": "Low",
+        "unmet_need": "Very High"
+    },
+    {
+        "indication": "Severe Asthma",
+        "therapy_area": "Respiratory",
+        "patient_burden_score": 7.8,
+        "active_trials": [
+            {
+                "nct_id": "NCT04345678",
+                "phase": "Phase III",
+                "drug_name": "Tezepelumab",
+                "sponsor": "Amgen/AstraZeneca"
+            },
+            {
+                "nct_id": "NCT05456789",
+                "phase": "Phase III",
+                "drug_name": "Dupilumab",
+                "sponsor": "Sanofi/Regeneron"
+            }
+        ],
+        "competition_density": "Low",
+        "unmet_need": "High"
+    },
+    {
+        "indication": "Asthma",
+        "therapy_area": "Respiratory",
+        "patient_burden_score": 6.5,
+        "active_trials": [
+            {
+                "nct_id": "NCT04456789",
+                "phase": "Phase IV",
+                "drug_name": "Fluticasone/Salmeterol",
+                "sponsor": "GSK"
+            },
+            {
+                "nct_id": "NCT04456790",
+                "phase": "Phase III",
+                "drug_name": "Budesonide/Formoterol",
+                "sponsor": "AstraZeneca"
+            },
+            {
+                "nct_id": "NCT04456791",
+                "phase": "Phase II",
+                "drug_name": "Novel ICS",
+                "sponsor": "Cipla"
+            },
+            {
+                "nct_id": "NCT04456792",
+                "phase": "Phase III",
+                "drug_name": "Ciclesonide",
+                "sponsor": "Covis Pharma"
+            }
+        ],
+        "competition_density": "High",
+        "unmet_need": "Medium"
+    },
+    {
+        "indication": "Pulmonary Arterial Hypertension",
+        "therapy_area": "Respiratory",
+        "patient_burden_score": 8.9,
+        "active_trials": [
+            {
+                "nct_id": "NCT04567890",
+                "phase": "Phase II",
+                "drug_name": "Sotatercept",
+                "sponsor": "Acceleron/Merck"
+            }
+        ],
+        "competition_density": "Low",
+        "unmet_need": "Very High"
+    },
+    {
+        "indication": "Melanoma",
+        "therapy_area": "Oncology",
+        "patient_burden_score": 7.2,
+        "active_trials": [
+            {
+                "nct_id": "NCT05123456",
+                "phase": "Phase II",
+                "drug_name": "Pembrolizumab + Novel Agent",
+                "sponsor": "Merck"
+            }
+        ],
+        "competition_density": "Medium",
+        "unmet_need": "Medium"
+    },
+    {
+        "indication": "Triple Negative Breast Cancer",
+        "therapy_area": "Oncology",
+        "patient_burden_score": 8.1,
+        "active_trials": [
+            {
+                "nct_id": "NCT05234567",
+                "phase": "Phase III",
+                "drug_name": "Pembrolizumab + Chemotherapy",
+                "sponsor": "Merck Sharp & Dohme"
+            },
+            {
+                "nct_id": "NCT05345890",
+                "phase": "Phase II",
+                "drug_name": "Sacituzumab Govitecan",
+                "sponsor": "Gilead"
+            }
+        ],
+        "competition_density": "Low",
+        "unmet_need": "High"
+    },
+    {
+        "indication": "Rheumatoid Arthritis",
+        "therapy_area": "Autoimmune",
+        "patient_burden_score": 7.5,
+        "active_trials": [
+            {
+                "nct_id": "NCT05456123",
+                "phase": "Phase III",
+                "drug_name": "Upadacitinib",
+                "sponsor": "AbbVie"
+            },
+            {
+                "nct_id": "NCT05567234",
+                "phase": "Phase III",
+                "drug_name": "Adalimumab Biosimilar",
+                "sponsor": "Biocon/Viatris"
+            },
+            {
+                "nct_id": "NCT05678345",
+                "phase": "Phase II",
+                "drug_name": "Novel JAK Inhibitor",
+                "sponsor": "Pfizer"
+            }
+        ],
+        "competition_density": "High",
+        "unmet_need": "Medium"
+    },
+    {
+        "indication": "Major Depressive Disorder",
+        "therapy_area": "CNS",
+        "patient_burden_score": 8.8,
+        "active_trials": [
+            {
+                "nct_id": "NCT05789456",
+                "phase": "Phase III",
+                "drug_name": "Esketamine",
+                "sponsor": "Johnson & Johnson"
+            },
+            {
+                "nct_id": "NCT05890567",
+                "phase": "Phase II",
+                "drug_name": "Psilocybin",
+                "sponsor": "COMPASS Pathways"
+            },
+            {
+                "nct_id": "NCT05901678",
+                "phase": "Phase III",
+                "drug_name": "Zuranolone",
+                "sponsor": "Sage/Biogen"
+            }
+        ],
+        "competition_density": "Medium",
+        "unmet_need": "High"
+    },
+    {
+        "indication": "Generalized Anxiety Disorder",
+        "therapy_area": "CNS",
+        "patient_burden_score": 7.9,
+        "active_trials": [
+            {
+                "nct_id": "NCT06012789",
+                "phase": "Phase III",
+                "drug_name": "Escitalopram",
+                "sponsor": "Generic"
+            },
+            {
+                "nct_id": "NCT06123890",
+                "phase": "Phase II",
+                "drug_name": "Novel GABA Modulator",
+                "sponsor": "Pfizer"
+            }
+        ],
+        "competition_density": "High",
+        "unmet_need": "Medium"
+    },
+    {
+        "indication": "Obesity",
+        "therapy_area": "Metabolic",
+        "patient_burden_score": 8.7,
+        "active_trials": [
+            {
+                "nct_id": "NCT06234901",
+                "phase": "Phase III",
+                "drug_name": "Retatrutide",
+                "sponsor": "Eli Lilly"
+            },
+            {
+                "nct_id": "NCT06345012",
+                "phase": "Phase III",
+                "drug_name": "Orforglipron",
+                "sponsor": "Eli Lilly"
+            },
+            {
+                "nct_id": "NCT06456123",
+                "phase": "Phase III",
+                "drug_name": "Semaglutide 2.4mg",
+                "sponsor": "Novo Nordisk"
+            }
+        ],
+        "competition_density": "Low",
+        "unmet_need": "Very High"
+    },
+    {
+        "indication": "HER2+ Breast Cancer",
+        "therapy_area": "Oncology",
+        "patient_burden_score": 7.4,
+        "active_trials": [
+            {
+                "nct_id": "NCT06567234",
+                "phase": "Phase III",
+                "drug_name": "Trastuzumab Deruxtecan",
+                "sponsor": "Daiichi Sankyo/AstraZeneca"
+            },
+            {
+                "nct_id": "NCT06678345",
+                "phase": "Phase III",
+                "drug_name": "Margetuximab",
+                "sponsor": "MacroGenics"
+            }
+        ],
+        "competition_density": "Medium",
+        "unmet_need": "Medium"
+    },
+    {
+        "indication": "Crohn's Disease",
+        "therapy_area": "Autoimmune",
+        "patient_burden_score": 8.3,
+        "active_trials": [
+            {
+                "nct_id": "NCT06789456",
+                "phase": "Phase III",
+                "drug_name": "Risankizumab",
+                "sponsor": "AbbVie"
+            },
+            {
+                "nct_id": "NCT06890567",
+                "phase": "Phase III",
+                "drug_name": "Upadacitinib",
+                "sponsor": "AbbVie"
+            },
+            {
+                "nct_id": "NCT06901678",
+                "phase": "Phase II",
+                "drug_name": "Guselkumab",
+                "sponsor": "Janssen"
+            }
+        ],
+        "competition_density": "Medium",
+        "unmet_need": "High"
+    },
+    {
+        "indication": "GERD",
+        "therapy_area": "Gastrointestinal",
+        "patient_burden_score": 5.8,
+        "active_trials": [
+            {
+                "nct_id": "NCT07012789",
+                "phase": "Phase IV",
+                "drug_name": "Pantoprazole",
+                "sponsor": "Generic"
+            },
+            {
+                "nct_id": "NCT07123890",
+                "phase": "Phase III",
+                "drug_name": "Vonoprazan",
+                "sponsor": "Takeda"
+            }
+        ],
+        "competition_density": "High",
+        "unmet_need": "Low"
+    },
+    {
+        "indication": "Community Acquired Pneumonia",
+        "therapy_area": "Anti-infective",
+        "patient_burden_score": 7.1,
+        "active_trials": [
+            {
+                "nct_id": "NCT07234901",
+                "phase": "Phase IV",
+                "drug_name": "Azithromycin",
+                "sponsor": "Generic"
+            },
+            {
+                "nct_id": "NCT07345012",
+                "phase": "Phase III",
+                "drug_name": "Lefamulin",
+                "sponsor": "Nabriva"
+            }
+        ],
+        "competition_density": "High",
+        "unmet_need": "Medium"
+    },
+    {
+        "indication": "Multiple Myeloma",
+        "therapy_area": "Oncology",
+        "patient_burden_score": 8.6,
+        "active_trials": [
+            {
+                "nct_id": "NCT07456123",
+                "phase": "Phase III",
+                "drug_name": "Carfilzomib",
+                "sponsor": "Amgen"
+            },
+            {
+                "nct_id": "NCT07567234",
+                "phase": "Phase III",
+                "drug_name": "Daratumumab",
+                "sponsor": "Janssen"
+            },
+            {
+                "nct_id": "NCT07678345",
+                "phase": "Phase II",
+                "drug_name": "Teclistamab",
+                "sponsor": "Janssen"
+            }
+        ],
+        "competition_density": "Medium",
+        "unmet_need": "High"
+    }
+]

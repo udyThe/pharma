@@ -1,0 +1,225 @@
+[
+    {
+        "molecule": "Pembrolizumab",
+        "total_import_volume_kg": 500,
+        "major_source_countries": [
+            "Ireland",
+            "USA"
+        ],
+        "average_price_per_kg": 150000,
+        "trend": "Stable",
+        "year": 2024
+    },
+    {
+        "molecule": "Sitagliptin",
+        "total_import_volume_kg": 25000,
+        "major_source_countries": [
+            "China",
+            "India"
+        ],
+        "average_price_per_kg": 250,
+        "trend": "Declining",
+        "year": 2024
+    },
+    {
+        "molecule": "Rivaroxaban",
+        "total_import_volume_kg": 12000,
+        "major_source_countries": [
+            "Germany",
+            "China"
+        ],
+        "average_price_per_kg": 800,
+        "trend": "Stable",
+        "year": 2024
+    },
+    {
+        "molecule": "Pirfenidone",
+        "total_import_volume_kg": 3500,
+        "major_source_countries": [
+            "Japan",
+            "China"
+        ],
+        "average_price_per_kg": 1200,
+        "trend": "Growing",
+        "year": 2024
+    },
+    {
+        "molecule": "Roflumilast",
+        "total_import_volume_kg": 850,
+        "major_source_countries": [
+            "Germany",
+            "India"
+        ],
+        "average_price_per_kg": 2800,
+        "trend": "Stable",
+        "year": 2024
+    },
+    {
+        "molecule": "Tiotropium",
+        "total_import_volume_kg": 180,
+        "major_source_countries": [
+            "Germany",
+            "USA"
+        ],
+        "average_price_per_kg": 45000,
+        "trend": "Declining",
+        "year": 2024
+    },
+    {
+        "molecule": "Fluticasone",
+        "total_import_volume_kg": 8500,
+        "major_source_countries": [
+            "UK",
+            "India",
+            "China"
+        ],
+        "average_price_per_kg": 320,
+        "trend": "Stable",
+        "year": 2024
+    },
+    {
+        "molecule": "Omalizumab",
+        "total_import_volume_kg": 45,
+        "major_source_countries": [
+            "Switzerland",
+            "USA"
+        ],
+        "average_price_per_kg": 850000,
+        "trend": "Growing",
+        "year": 2024
+    },
+    {
+        "molecule": "Paracetamol",
+        "total_import_volume_kg": 450000,
+        "major_source_countries": [
+            "China",
+            "India"
+        ],
+        "average_price_per_kg": 4.5,
+        "trend": "Stable",
+        "year": 2024
+    },
+    {
+        "molecule": "Azithromycin",
+        "total_import_volume_kg": 85000,
+        "major_source_countries": [
+            "China",
+            "India"
+        ],
+        "average_price_per_kg": 45,
+        "trend": "Growing",
+        "year": 2024
+    },
+    {
+        "molecule": "Pantoprazole",
+        "total_import_volume_kg": 120000,
+        "major_source_countries": [
+            "India",
+            "China"
+        ],
+        "average_price_per_kg": 35,
+        "trend": "Stable",
+        "year": 2024
+    },
+    {
+        "molecule": "Atorvastatin",
+        "total_import_volume_kg": 95000,
+        "major_source_countries": [
+            "India",
+            "China"
+        ],
+        "average_price_per_kg": 60,
+        "trend": "Declining",
+        "year": 2024
+    },
+    {
+        "molecule": "Metformin",
+        "total_import_volume_kg": 280000,
+        "major_source_countries": [
+            "India",
+            "China"
+        ],
+        "average_price_per_kg": 12,
+        "trend": "Stable",
+        "year": 2024
+    },
+    {
+        "molecule": "Semaglutide",
+        "total_import_volume_kg": 120,
+        "major_source_countries": [
+            "Denmark",
+            "USA"
+        ],
+        "average_price_per_kg": 2500000,
+        "trend": "Growing",
+        "year": 2024
+    },
+    {
+        "molecule": "Adalimumab",
+        "total_import_volume_kg": 85,
+        "major_source_countries": [
+            "USA",
+            "Germany",
+            "India"
+        ],
+        "average_price_per_kg": 750000,
+        "trend": "Declining",
+        "year": 2024
+    },
+    {
+        "molecule": "Escitalopram",
+        "total_import_volume_kg": 18000,
+        "major_source_countries": [
+            "India",
+            "China"
+        ],
+        "average_price_per_kg": 180,
+        "trend": "Growing",
+        "year": 2024
+    },
+    {
+        "molecule": "Montelukast",
+        "total_import_volume_kg": 35000,
+        "major_source_countries": [
+            "India",
+            "China"
+        ],
+        "average_price_per_kg": 220,
+        "trend": "Stable",
+        "year": 2024
+    },
+    {
+        "molecule": "Trastuzumab",
+        "total_import_volume_kg": 25,
+        "major_source_countries": [
+            "Switzerland",
+            "Germany",
+            "India"
+        ],
+        "average_price_per_kg": 1200000,
+        "trend": "Stable",
+        "year": 2024
+    },
+    {
+        "molecule": "Lenalidomide",
+        "total_import_volume_kg": 150,
+        "major_source_countries": [
+            "USA",
+            "Ireland"
+        ],
+        "average_price_per_kg": 3500000,
+        "trend": "Declining",
+        "year": 2024
+    },
+    {
+        "molecule": "Amlodipine",
+        "total_import_volume_kg": 75000,
+        "major_source_countries": [
+            "India",
+            "China"
+        ],
+        "average_price_per_kg": 25,
+        "trend": "Stable",
+        "year": 2024
+    }
+]

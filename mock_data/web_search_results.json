@@ -1,0 +1,122 @@
+[
+    {
+        "query": "respiratory disease market India",
+        "results": [
+            {
+                "title": "India Respiratory Market to Reach $4.2B by 2028 - FiercePharma",
+                "url": "https://fiercepharma.com/india-respiratory-2028",
+                "snippet": "The Indian respiratory market is experiencing rapid growth driven by rising pollution levels and increasing COPD/asthma prevalence. Generic competition remains limited in novel biologics."
+            },
+            {
+                "title": "COPD Burden in India: 55 Million Patients - Lancet",
+                "url": "https://lancet.com/copd-india-2024",
+                "snippet": "India has the highest COPD burden globally with 55 million patients. Current treatments are inadequate, creating significant unmet medical need."
+            }
+        ]
+    },
+    {
+        "query": "Pembrolizumab new indications 2024",
+        "results": [
+            {
+                "title": "FDA Approves Keytruda for Endometrial Cancer - FDA.gov",
+                "url": "https://fda.gov/keytruda-endometrial-2024",
+                "snippet": "The FDA has granted approval for Pembrolizumab (Keytruda) in combination with lenvatinib for advanced endometrial cancer, expanding its indication portfolio."
+            },
+            {
+                "title": "Merck Announces Positive Phase III Results in Bladder Cancer",
+                "url": "https://merck.com/bladder-cancer-phase3",
+                "snippet": "Pembrolizumab shows significant improvement in overall survival for muscle-invasive bladder cancer patients in the KEYNOTE-866 trial."
+            }
+        ]
+    },
+    {
+        "query": "generic Sitagliptin launch India",
+        "results": [
+            {
+                "title": "Sun Pharma Launches Generic Sitagliptin at 60% Discount",
+                "url": "https://pharmabiz.com/sun-sitagliptin",
+                "snippet": "Following patent expiry, Sun Pharmaceutical launched generic Sitagliptin in India at Rs 8 per tablet, compared to Rs 22 for the branded version."
+            }
+        ]
+    },
+    {
+        "query": "Rivaroxaban patent expiry generic launch",
+        "results": [
+            {
+                "title": "Bayer Prepares Authorized Generic Strategy for Xarelto",
+                "url": "https://reuters.com/bayer-xarelto-ag",
+                "snippet": "Bayer is planning to launch an authorized generic of Rivaroxaban to maintain market share ahead of full generic competition expected in 2025."
+            }
+        ]
+    },
+    {
+        "query": "IPF treatment options unmet need",
+        "results": [
+            {
+                "title": "Idiopathic Pulmonary Fibrosis: Limited Treatment Options",
+                "url": "https://medscape.com/ipf-treatment-2024",
+                "snippet": "Only two drugs (Pirfenidone and Nintedanib) are approved for IPF. Both slow progression but do not cure. Significant opportunity for novel therapies."
+            }
+        ]
+    },
+    {
+        "query": "Semaglutide shortage supply constraints",
+        "results": [
+            {
+                "title": "Ozempic, Wegovy Shortage Continues Through 2024",
+                "url": "https://reuters.com/semaglutide-shortage-2024",
+                "snippet": "Novo Nordisk struggles to meet unprecedented demand for Semaglutide products. Manufacturing expansion underway but shortages expected through 2024."
+            },
+            {
+                "title": "FDA Lists Wegovy in Drug Shortage Database",
+                "url": "https://fda.gov/shortage-wegovy",
+                "snippet": "The FDA has officially listed Wegovy (semaglutide 2.4mg) as in shortage, affecting patients seeking obesity treatment across the United States."
+            }
+        ]
+    },
+    {
+        "query": "Tirzepatide versus Semaglutide weight loss",
+        "results": [
+            {
+                "title": "Tirzepatide Shows Superior Weight Loss vs. Semaglutide - NEJM",
+                "url": "https://nejm.org/tirzepatide-weight-loss",
+                "snippet": "Head-to-head trial demonstrates tirzepatide achieving 22.5% weight loss versus 15% for semaglutide, establishing new standard in obesity treatment."
+            }
+        ]
+    },
+    {
+        "query": "Adalimumab biosimilar market share",
+        "results": [
+            {
+                "title": "Humira Biosimilars Capture 30% Market Share in First Year",
+                "url": "https://biopharmadive.com/humira-biosimilar-share",
+                "snippet": "Multiple adalimumab biosimilars have collectively captured 30% of the US market within 12 months of launch, with Amgen's leading adoption."
+            }
+        ]
+    },
+    {
+        "query": "Depression treatment psilocybin FDA",
+        "results": [
+            {
+                "title": "FDA Grants Breakthrough Therapy Status to Psilocybin",
+                "url": "https://fda.gov/psilocybin-breakthrough",
+                "snippet": "The FDA has granted breakthrough therapy designation to psilocybin for treatment-resistant depression, accelerating development timeline."
+            }
+        ]
+    },
+    {
+        "query": "India pharma market outlook 2025",
+        "results": [
+            {
+                "title": "India Pharma Market to Reach $65B by 2025 - IBEF",
+                "url": "https://ibef.org/india-pharma-2025",
+                "snippet": "India's pharmaceutical market is projected to reach $65 billion by 2025, driven by increasing healthcare access and chronic disease prevalence."
+            },
+            {
+                "title": "Generic Drug Exports from India Surpass $25B",
+                "url": "https://economictimes.com/pharma-exports",
+                "snippet": "India remains the world's largest supplier of generic medicines, with exports exceeding $25 billion annually. US and Europe are largest markets."
+            }
+        ]
+    }
+]

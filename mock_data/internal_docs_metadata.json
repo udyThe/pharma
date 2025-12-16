@@ -1,0 +1,124 @@
+[
+    {
+        "doc_id": "DOC-001",
+        "title": "Oncology Strategy 2025",
+        "summary": "Focus on biosimilars for Keytruda and Opdivo. High unmet need in affordable immunotherapy in emerging markets.",
+        "tags": [
+            "Oncology",
+            "Strategy",
+            "Biosimilars",
+            "Pembrolizumab"
+        ],
+        "content": "The oncology market continues to grow at 12% CAGR. Pembrolizumab biosimilar opportunity exists post-2028. Key markets: India, Brazil, ASEAN. Priority indications: NSCLC, Melanoma, TNBC. Competitive landscape: Roche accelerating subcutaneous IO development. Recommendation: Build manufacturing capabilities now for 2028 biosimilar launch."
+    },
+    {
+        "doc_id": "DOC-002",
+        "title": "Field Report: Diabetes India Q3",
+        "summary": "Sitagliptin generics are flooding the market. Need to differentiate with fixed-dose combinations (FDCs).",
+        "tags": [
+            "Diabetes",
+            "India",
+            "Field Insights",
+            "Sitagliptin"
+        ],
+        "content": "Generic sitagliptin launched at Rs 8/tablet vs branded Rs 22. Market share dropped 15% in 3 months. Teneligliptin gaining share due to lower price. Recommendation: Focus on FDC with metformin, patient compliance programs. Consider switching focus to GLP-1 segment where Novo Nordisk dominates. Semaglutide demand exceeds supply - opportunity for early biosimilar development."
+    },
+    {
+        "doc_id": "DOC-003",
+        "title": "Respiratory Portfolio Assessment 2024",
+        "summary": "Respiratory diseases in India present significant opportunity. COPD and IPF have low generic competition and high patient burden.",
+        "tags": [
+            "Respiratory",
+            "India",
+            "Portfolio",
+            "COPD",
+            "IPF",
+            "Pirfenidone"
+        ],
+        "content": "India respiratory market at $1.2B, growing 14% annually. COPD affects 55M patients with limited treatment options. IPF is underdiagnosed but growing awareness. Recommendation: Prioritize Pirfenidone generic and Roflumilast FDC development. Low competition in specialty respiratory segment. Tiotropium generic dry powder inhaler opportunity exists post-Respimat patent expiry."
+    },
+    {
+        "doc_id": "DOC-004",
+        "title": "SWOT Analysis: Respiratory Biologics",
+        "summary": "Assessment of Omalizumab and other respiratory biologics opportunity in emerging markets.",
+        "tags": [
+            "Respiratory",
+            "Biologics",
+            "SWOT",
+            "Omalizumab",
+            "Biosimilars"
+        ],
+        "content": "Strengths: First-mover advantage in biosimilar, established cold chain. Weaknesses: High manufacturing cost, limited awareness among GPs. Opportunities: Growing severe asthma diagnosis, low competition from other biosimilars. Threats: Newer IL-5 inhibitors (Dupilumab) gaining traction with superior efficacy. Recommendation: Partner with pulmonologists for patient identification programs. Consider Dupilumab biosimilar for long-term pipeline."
+    },
+    {
+        "doc_id": "DOC-005",
+        "title": "Innovation Pipeline: Oral Formulations",
+        "summary": "R&D focus on converting injectables to oral formulations for improved patient compliance.",
+        "tags": [
+            "Innovation",
+            "R&D",
+            "Formulation",
+            "Patient Compliance"
+        ],
+        "content": "Patient feedback consistently highlights needle pain and injection anxiety as barriers. Priority molecules for oral conversion: GLP-1 agonists (semaglutide oral success validates approach), biologics (challenging but high reward). Technology platforms: SNEDDS, nanoparticle delivery, permeation enhancers. Timeline: 3-5 years for proof of concept. Budget request: $15M for feasibility studies."
+    },
+    {
+        "doc_id": "DOC-006",
+        "title": "Cardiovascular Market Outlook 2025",
+        "summary": "Anticoagulant market dynamics shifting with Rivaroxaban patent expiry and generics entry.",
+        "tags": [
+            "Cardiovascular",
+            "Rivaroxaban",
+            "Patents",
+            "Generics"
+        ],
+        "content": "Rivaroxaban (Xarelto) patent expired Aug 2024. Bayer launching authorized generic to maintain share. Teva and Sun Pharma entering with aggressive pricing. Recommendation: Focus on branded generics in India with strong field force. Edoxaban opportunity exists in markets where Rivaroxaban dominated. Apixaban remains patent-protected until 2026 - prepare for that entry."
+    },
+    {
+        "doc_id": "DOC-007",
+        "title": "CNS Therapeutic Area Review",
+        "summary": "Mental health market growing rapidly post-pandemic. SSRIs commoditized but novel mechanisms emerging.",
+        "tags": [
+            "CNS",
+            "Depression",
+            "Anxiety",
+            "Escitalopram"
+        ],
+        "content": "Depression and anxiety prevalence increased 25% globally post-COVID. Escitalopram and sertraline dominate but fully generic. Novel mechanisms: Esketamine (J&J) for treatment-resistant depression, psilocybin research advancing. India opportunity: Generic escitalopram market $210M, growing 11.5%. Recommendation: Focus on extended-release formulations and FDCs for differentiation. Monitor psychedelic therapy regulatory developments."
+    },
+    {
+        "doc_id": "DOC-008",
+        "title": "GI Portfolio Strategy Update",
+        "summary": "PPI market saturated but stable. Vonoprazan represents next-gen opportunity in acid-related disorders.",
+        "tags": [
+            "Gastrointestinal",
+            "PPI",
+            "Pantoprazole",
+            "Vonoprazan"
+        ],
+        "content": "Pantoprazole and other PPIs fully commoditized. Market stable at $520M in India. Vonoprazan (Takeda) launching as P-CAB with faster onset and longer duration. Recommendation: Develop branded generic pantoprazole for near-term revenue; R&D focus on P-CAB development for long-term positioning. Monitor refractory GERD segment closely."
+    },
+    {
+        "doc_id": "DOC-009",
+        "title": "Obesity Market Opportunity Assessment",
+        "summary": "GLP-1 agonists revolutionizing obesity treatment. Supply constraints creating market opportunity.",
+        "tags": [
+            "Obesity",
+            "Semaglutide",
+            "GLP-1",
+            "Tirzepatide"
+        ],
+        "content": "Semaglutide (Wegovy) and tirzepatide (Zepbound) creating $50B+ market opportunity by 2030. Current supply cannot meet demand - 18-month waitlists in some markets. Novo Nordisk and Eli Lilly dominating. Recommendation: Accelerate biosimilar development timeline; semaglutide patents expire 2031-2034. Build peptide manufacturing capability. Oral GLP-1 formulation represents even larger opportunity."
+    },
+    {
+        "doc_id": "DOC-010",
+        "title": "Biosimilar Manufacturing Readiness",
+        "summary": "Capacity planning for biosimilar portfolio including trastuzumab, adalimumab, and pembrolizumab.",
+        "tags": [
+            "Manufacturing",
+            "Biosimilars",
+            "Capacity Planning"
+        ],
+        "content": "Current biosimilar capacity: 2,000L bioreactors, 70% utilized. Trastuzumab biosimilar demand projections: 500kg/year by 2026. Adalimumab biosimilar: 200kg/year. Pembrolizumab (2028+): 800kg/year peak. Recommendation: Invest $45M in 10,000L bioreactor expansion. Site selection: Bangalore or Hyderabad for regulatory familiarity. Timeline: 24 months to operational."
+    }
+]
