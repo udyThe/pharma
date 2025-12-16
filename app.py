@@ -317,17 +317,32 @@ def sidebar():
                 conversations = ConversationService.get_user_conversations(user_id, limit=10)
                 
                 for conv in conversations:
-                    title = conv["title"][:30] + "..." if len(conv["title"]) > 30 else conv["title"]
-                    if st.button(f"📄 {title}", key=f"conv_{conv['id']}", use_container_width=True):
-                        # Load conversation
-                        full_conv = ConversationService.get_conversation(conv["id"])
-                        if full_conv:
-                            st.session_state.conversation_id = conv["id"]
-                            st.session_state.messages = [
-                                {"role": m["role"], "content": m["content"], "agents": m.get("agents", [])}
-                                for m in full_conv["messages"]
-                            ]
-                            st.rerun()
+                    title = conv["title"][:25] + "..." if len(conv["title"]) > 25 else conv["title"]
+                    
+                    # Create columns for conversation button and delete button
+                    col1, col2 = st.columns([5, 1])
+                    
+                    with col1:
+                        if st.button(f"📄 {title}", key=f"conv_{conv['id']}", use_container_width=True):
+                            # Load conversation
+                            full_conv = ConversationService.get_conversation(conv["id"])
+                            if full_conv:
+                                st.session_state.conversation_id = conv["id"]
+                                st.session_state.messages = [
+                                    {"role": m["role"], "content": m["content"], "agents": m.get("agents", [])}
+                                    for m in full_conv["messages"]
+                                ]
+                                st.rerun()
+                    
+                    with col2:
+                        if st.button("🗑️", key=f"del_{conv['id']}", help="Delete conversation"):
+                            # Delete conversation
+                            if ConversationService.delete_conversation(conv["id"]):
+                                # Clear current conversation if it's the deleted one
+                                if st.session_state.conversation_id == conv["id"]:
+                                    st.session_state.conversation_id = None
+                                    st.session_state.messages = []
+                                st.rerun()
             except Exception as e:
                 st.caption(f"Could not load history")
         
@@ -351,25 +366,27 @@ def sidebar():
         
         st.markdown("---")
         
+        # ===== API USAGE SECTION REMOVED =====
         # Rate limit status
-        st.markdown("### 📊 API Usage")
-        try:
-            from src.services.rate_limiter import RateLimiter
-            stats = RateLimiter.get_usage_stats()
-            
-            for api, data in stats.items():
-                used = data.get("global_calls", 0)
-                limit = data.get("global_limit", 100)
-                pct = min(100, int((used / limit) * 100)) if limit > 0 else 0
-                color = "#48bb78" if pct < 70 else "#ecc94b" if pct < 90 else "#fc8181"
-                
-                st.caption(f"**{api.title()}**: {used}/{limit}")
-                st.markdown(
-                    f'<div class="rate-limit-bar"><div class="rate-limit-fill" style="width:{pct}%;background:{color}"></div></div>',
-                    unsafe_allow_html=True
-                )
-        except:
-            st.caption("Rate limiting active")
+        # st.markdown("### 📊 API Usage")
+        # try:
+        #     from src.services.rate_limiter import RateLimiter
+        #     stats = RateLimiter.get_usage_stats()
+        #     
+        #     for api, data in stats.items():
+        #         used = data.get("global_calls", 0)
+        #         limit = data.get("global_limit", 100)
+        #         pct = min(100, int((used / limit) * 100)) if limit > 0 else 0
+        #         color = "#48bb78" if pct < 70 else "#ecc94b" if pct < 90 else "#fc8181"
+        #         
+        #         st.caption(f"**{api.title()}**: {used}/{limit}")
+        #         st.markdown(
+        #             f'<div class="rate-limit-bar"><div class="rate-limit-fill" style="width:{pct}%;background:{color}"></div></div>',
+        #             unsafe_allow_html=True
+        #         )
+        # except:
+        #     st.caption("Rate limiting active")
+        # ===== END API USAGE SECTION =====
         
         st.markdown("---")
         
