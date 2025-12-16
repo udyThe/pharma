@@ -62,10 +62,19 @@ class ChartService:
         if not data:
             return cls._empty_chart("No CAGR data available")
         
-        df = pd.DataFrame(data).sort_values("cagr_percent", ascending=True)
+        df = pd.DataFrame(data)
         
-        # Color by CAGR value
-        colors = [cls.COLORS["danger"] if c < 5 else cls.COLORS["warning"] if c < 10 else cls.COLORS["success"] for c in df["cagr_percent"]]
+        # Handle None/NaN values in cagr_percent
+        df["cagr_percent"] = pd.to_numeric(df["cagr_percent"], errors="coerce").fillna(0)
+        df = df.sort_values("cagr_percent", ascending=True)
+        
+        # Color by CAGR value with None handling
+        colors = [
+            cls.COLORS["danger"] if c < 5 else 
+            cls.COLORS["warning"] if c < 10 else 
+            cls.COLORS["success"] 
+            for c in df["cagr_percent"]
+        ]
         
         fig = go.Figure(go.Bar(
             x=df["cagr_percent"],

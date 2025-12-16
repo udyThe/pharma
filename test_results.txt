@@ -1,0 +1,59 @@
+﻿
+============================================================
+  PHARMA AI - QUICK VALIDATION TEST
+  (Bypasses crewai to test core functionality)
+============================================================
+
+============================================================
+  MOCK DATA FILE TESTS
+============================================================
+  [PASS] iqvia_market_data.json: 20 entries
+  [PASS] exim_trade_data.json: 20 entries
+  [PASS] clinical_trials.json: 18 entries
+  [PASS] competitor_strategies.json: 24 entries
+  [PASS] social_media_posts.json: 30 entries
+  [PASS] uspto_patents.json: 20 entries
+  [PASS] web_search_results.json: 10 entries
+  [PASS] internal_docs_metadata.json: 10 entries
+
+  Result: 8/8 passed
+
+============================================================
+  DATA LOADING FUNCTION TESTS
+============================================================
+  [PASS] Competitor: Found 3 entries for Rivaroxaban
+  [PASS] Patent: Semaglutide has 3 patents
+  [PASS] IQVIA: Found 6 respiratory entries
+  [PASS] EXIM: Found Sitagliptin trade data
+  [PASS] Clinical: COPD has 3 active trials
+  [PASS] Social: Found 8 diabetes posts
+
+  Result: 6/6 passed
+
+============================================================
+  PYTHON SYNTAX TESTS
+============================================================
+  [PASS] app.py
+  [PASS] run.py
+  [PASS] src/tools/iqvia_tool.py
+  [PASS] src/tools/exim_tool.py
+  [PASS] src/tools/patent_tool.py
+  [PASS] src/tools/competitor_tool.py
+  [PASS] src/tools/clinical_tool.py
+  [PASS] src/tools/social_tool.py
+  [PASS] src/tools/internal_tool.py
+  [PASS] src/tools/web_tool.py
+  [PASS] src/services/report_generator.py
+  [PASS] pages/4_Admin.py
+
+  Result: 12/12 passed
+
+============================================================
+  SUMMARY
+============================================================
+  [PASS] Mock Data Files
+  [PASS] Data Loading
+  [PASS] Python Syntax
+
+  Overall: ALL TESTS PASSED
+============================================================

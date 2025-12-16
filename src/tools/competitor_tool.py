@@ -2,6 +2,7 @@
 Competitor Intelligence Tool
 Queries database for competitor strategy and war gaming analysis.
 """
+import json
 from crewai.tools import tool
 import sys
 from pathlib import Path
@@ -19,11 +20,27 @@ def _extract_entity_from_query(query: str, entity_type: str = "molecule") -> str
     query_lower = query.lower()
     
     if entity_type == "molecule":
+        # Brand name mappings
+        brand_to_molecule = {
+            "dolo": "Paracetamol", "dolo650": "Paracetamol", "dolo 650": "Paracetamol",
+            "keytruda": "Pembrolizumab", "januvia": "Sitagliptin",
+            "xarelto": "Rivaroxaban", "esbriet": "Pirfenidone",
+            "spiriva": "Tiotropium", "humira": "Adalimumab",
+            "ozempic": "Semaglutide", "wegovy": "Semaglutide",
+            "herceptin": "Trastuzumab", "revlimid": "Lenalidomide"
+        }
+        
+        for brand, mol in brand_to_molecule.items():
+            if brand in query_lower:
+                return mol
+        
         # Known molecules in our database
         known_molecules = [
             "pembrolizumab", "sitagliptin", "rivaroxaban", "pirfenidone",
             "roflumilast", "tiotropium", "omalizumab", "fluticasone",
-            "metformin", "trastuzumab"
+            "metformin", "trastuzumab", "semaglutide", "adalimumab",
+            "escitalopram", "pantoprazole", "atorvastatin", "amlodipine",
+            "paracetamol", "azithromycin", "montelukast", "lenalidomide"
         ]
         
         for mol in known_molecules:
@@ -46,7 +63,8 @@ def _extract_entity_from_query(query: str, entity_type: str = "molecule") -> str
         known_companies = [
             "pfizer", "novartis", "roche", "merck", "sanofi", "gsk", 
             "astrazeneca", "johnson", "abbvie", "bristol", "lilly",
-            "teva", "sun pharma", "cipla", "dr. reddy"
+            "teva", "sun pharma", "cipla", "dr. reddy", "biocon",
+            "bayer", "eli lilly", "daiichi", "natco", "mylan", "viatris"
         ]
         
         for company in known_companies:
@@ -54,6 +72,30 @@ def _extract_entity_from_query(query: str, entity_type: str = "molecule") -> str
                 return company.title()
     
     return None
+
+
+def _load_competitor_data() -> list:
+    """Load competitor data from JSON file, merging with DB if available."""
+    all_data = []
+    
+    # Try database first
+    db_data = _query_database()
+    if db_data:
+        all_data.extend(db_data)
+    
+    # Always also load JSON file for complete data
+    data_path = Path(__file__).resolve().parent.parent.parent / "mock_data" / "competitor_strategies.json"
+    if data_path.exists():
+        with open(data_path, "r") as f:
+            json_data = json.load(f)
+            # Add JSON entries that aren't already in DB data
+            existing_keys = {(d.get("molecule", "").lower(), d.get("competitor", "").lower()) for d in all_data}
+            for entry in json_data:
+                key = (entry.get("molecule", "").lower(), entry.get("competitor", "").lower())
+                if key not in existing_keys:
+                    all_data.append(entry)
+    
+    return all_data
 
 
 def _query_database(molecule: str = None, company: str = None):
@@ -106,10 +148,14 @@ def get_competitor_strategy(company: str = None, query: str = None) -> str:
         if not company:
             return "Could not identify a specific company. Please specify a competitor name (e.g., 'Pfizer', 'Novartis', 'Teva')."
         
-        results = _query_database(company=company)
+        # Load all data (DB + JSON)
+        all_data = _load_competitor_data()
+        
+        # Filter by company
+        results = [d for d in all_data if company.lower() in d.get("competitor", "").lower()]
         
         if not results:
-            return f"No competitor intelligence found for: {company}. This company may not be in our database."
+            return f"No competitor intelligence found for: {company}. Try: Sun Pharma, Teva, Roche, Cipla, BMS, Biocon."
         
         output = [f"**Competitor Intelligence for {company}:**\n"]
         
@@ -148,10 +194,14 @@ def query_competitor_intel(molecule: str = None, query: str = None) -> str:
         if not molecule:
             molecule = query or "unspecified molecule"
         
-        results = _query_database(molecule=molecule)
+        # Load all data (DB + JSON)
+        all_data = _load_competitor_data()
+        
+        # Filter by molecule
+        results = [d for d in all_data if molecule.lower() in d.get("molecule", "").lower()]
         
         if not results:
-            return f"No competitor intelligence found for: {molecule}. This molecule may not be in our database."
+            return f"No competitor intelligence found for: {molecule}. Try: Sitagliptin, Rivaroxaban, Pembrolizumab, Semaglutide, Trastuzumab."
         
         output = [f"**Competitor Intelligence for {molecule}:**\n"]
         
@@ -191,10 +241,14 @@ def war_game_scenario(molecule: str = None, proposed_strategy: str = "Market ent
         if not molecule:
             molecule = query or "unspecified molecule"
         
-        results = _query_database(molecule=molecule)
+        # Load all data (DB + JSON)
+        all_data = _load_competitor_data()
+        
+        # Filter by molecule
+        results = [d for d in all_data if molecule.lower() in d.get("molecule", "").lower()]
         
         if not results:
-            return f"No competitor data available for war gaming: {molecule}. This molecule may not be in our database."
+            return f"No competitor data available for war gaming: {molecule}. Try: Sitagliptin, Rivaroxaban, Pembrolizumab, Semaglutide."
         
         output = [
             f"**War Game Simulation: {molecule}**\n",
@@ -279,10 +333,14 @@ def assess_competitive_threats(molecule: str = None, query: str = None) -> str:
         if not molecule:
             molecule = query or "unspecified molecule"
         
-        results = _query_database(molecule=molecule)
+        # Load all data (DB + JSON)
+        all_data = _load_competitor_data()
+        
+        # Filter by molecule
+        results = [d for d in all_data if molecule.lower() in d.get("molecule", "").lower()]
         
         if not results:
-            return f"No threat data available for: {molecule}. This molecule may not be in our database."
+            return f"No threat data available for: {molecule}. Try: Sitagliptin, Rivaroxaban, Pembrolizumab, Semaglutide."
         
         high_threats = [r for r in results if r["likelihood"] == "High"]
         medium_threats = [r for r in results if r["likelihood"] == "Medium"]

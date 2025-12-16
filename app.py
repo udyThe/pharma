@@ -831,9 +831,17 @@ def process_message(query: str):
         except Exception:
             pass
     
-    # Check if user is asking to export
+    # Check if user is asking to export a report (not trade/export data)
     q_lower = query.lower()
-    if any(w in q_lower for w in ["export", "download", "generate report", "create pdf", "create excel", "save"]):
+    # Use specific phrases to avoid matching "export data" queries meant for EXIM tool
+    export_phrases = [
+        "export as", "export to", "export report", "export the", "export this",
+        "download pdf", "download excel", "download report", "download the", "download this",
+        "generate report", "generate pdf", "generate excel",
+        "create pdf", "create excel", "create report",
+        "save as", "save to", "save report", "save the", "save this"
+    ]
+    if any(phrase in q_lower for phrase in export_phrases):
         if "pdf" in q_lower:
             path, file_bytes, filename = export_report("PDF")
             if path and file_bytes:

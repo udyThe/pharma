@@ -215,15 +215,23 @@ with tab3:
         with col2:
             st.markdown("### Add New User")
             
-            # Only admin can add users
-            if user.get("role") != "admin":
-                st.info("Only administrators can add or modify users. You have read-only access.")
-            else:
+            # Both admin and manager can add users, but managers cannot add admin users
+            is_admin = user.get("role") == "admin"
+            is_manager = user.get("role") == "manager"
+            
+            if is_admin or is_manager:
                 with st.form("add_user"):
                     username = st.text_input("Username")
                     email = st.text_input("Email")
                     password = st.text_input("Password", type="password")
-                    role = st.selectbox("Role", ["analyst", "manager", "admin"])
+                    
+                    # Managers can only create analyst or manager users
+                    if is_admin:
+                        role_options = ["analyst", "manager", "admin"]
+                    else:
+                        role_options = ["analyst", "manager"]
+                    
+                    role = st.selectbox("Role", role_options)
                     
                     if st.form_submit_button("Add User", use_container_width=True):
                         if username and password:
@@ -254,6 +262,8 @@ with tab3:
                                 st.error(f"Error: {e}")
                         else:
                             st.warning("Please fill in required fields.")
+            else:
+                st.info("Only administrators and managers can add users.")
             
             st.markdown("---")
             st.markdown("### Manage User")
@@ -265,8 +275,18 @@ with tab3:
             if user_options:
                 selected_user = st.selectbox("Select User", list(user_options.keys()))
                 
-                # Only admin can modify users
-                if user.get("role") == "admin":
+                # Admin can modify all users, managers can modify non-admin users
+                can_modify = False
+                if is_admin:
+                    can_modify = True
+                elif is_manager:
+                    # Check if selected user is not an admin
+                    with get_db_session() as session:
+                        selected_user_obj = session.get(User, user_options[selected_user])
+                        if selected_user_obj and selected_user_obj.role != UserRole.ADMIN:
+                            can_modify = True
+                
+                if can_modify:
                     col_a, col_b = st.columns(2)
                     with col_a:
                         if st.button("🔄 Reset Password", use_container_width=True):
@@ -295,6 +315,8 @@ with tab3:
                                     st.error(f"Error: {e}")
                             else:
                                 st.warning("Cannot deactivate your own account.")
+                else:
+                    st.info("You can only modify users with analyst or manager roles.")
 
 
 # Tab 4: Documents

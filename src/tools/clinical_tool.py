@@ -121,17 +121,26 @@ def _query_database(indication: str = None, therapy_area: str = None, molecule: 
 
 
 def _load_clinical_data() -> list:
-    """Load clinical trials from database, fallback to JSON."""
+    """Load clinical trials from JSON file, merging with DB if available."""
+    all_data = []
+    
+    # Try database first
     db_data = _query_database()
     if db_data:
-        return db_data
+        all_data.extend(db_data)
     
-    # Fallback to JSON file
+    # Always also load JSON file for complete data
     data_path = Path(__file__).resolve().parent.parent.parent / "mock_data" / "clinical_trials.json"
     if data_path.exists():
         with open(data_path, "r") as f:
-            return json.load(f)
-    return []
+            json_data = json.load(f)
+            # Add JSON entries that aren't already in DB data
+            existing_indications = {d.get("indication", "").lower() for d in all_data}
+            for entry in json_data:
+                if entry.get("indication", "").lower() not in existing_indications:
+                    all_data.append(entry)
+    
+    return all_data
 
 
 def _fetch_from_clinicaltrials_api(drug_name: str = None, indication: str = None) -> list:

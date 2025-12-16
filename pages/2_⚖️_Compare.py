@@ -293,8 +293,12 @@ def render_molecule_card(profile: dict, col):
         st.markdown("#### ⚔️ Competitive Threats")
         if profile["competitors"]:
             for c in profile["competitors"]:
-                likelihood_emoji = "🔴" if c["likelihood"] == "High" else "🟡" if c["likelihood"] == "Medium" else "🟢"
-                st.caption(f"{likelihood_emoji} **{c['competitor']}**: {c['strategy'][:80]}...")
+                likelihood = c.get("likelihood") or "Medium"
+                competitor_name = c.get("competitor") or c.get("company") or "Unknown"
+                strategy_text = c.get("strategy") or "Strategy not available"
+                strategy_display = strategy_text[:80] if len(strategy_text) > 80 else strategy_text
+                likelihood_emoji = "🔴" if likelihood == "High" else "🟡" if likelihood == "Medium" else "🟢"
+                st.caption(f"{likelihood_emoji} **{competitor_name}**: {strategy_display}...")
         else:
             st.caption("No competitive intelligence")
         

@@ -95,16 +95,26 @@ def _query_database(therapy_area: str = None, molecule: str = None):
 
 
 def _load_social_data() -> list:
-    """Load social data from database, fallback to JSON."""
+    """Load social data from JSON file, merging with DB if available."""
+    all_data = []
+    
+    # Try database first
     db_data = _query_database()
     if db_data:
-        return db_data
+        all_data.extend(db_data)
     
+    # Always also load JSON file for complete data
     data_path = Path(__file__).resolve().parent.parent.parent / "mock_data" / "social_media_posts.json"
     if data_path.exists():
         with open(data_path, "r") as f:
-            return json.load(f)
-    return []
+            json_data = json.load(f)
+            # Add JSON entries that aren't already in DB data
+            existing_molecules = {d.get("molecule", "").lower() for d in all_data}
+            for entry in json_data:
+                if entry.get("molecule", "").lower() not in existing_molecules:
+                    all_data.append(entry)
+    
+    return all_data
 
 
 @tool("Query Social Media Sentiment")

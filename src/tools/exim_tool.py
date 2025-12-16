@@ -88,11 +88,7 @@ def _query_database(molecule: str = None):
 
 
 def _load_exim_data() -> list:
-    """Load EXIM data from database, fallback to JSON."""
-    db_data = _query_database()
-    if db_data:
-        return db_data
-    
+    """Load EXIM data from JSON file."""
     data_path = Path(__file__).resolve().parent.parent.parent / "mock_data" / "exim_trade_data.json"
     if data_path.exists():
         with open(data_path, "r") as f:
@@ -120,15 +116,25 @@ def query_exim_trade(molecule: str = None, query: Optional[str] = None) -> str:
         if not molecule:
             molecule = query or "unspecified molecule"
         
-        # Try database first
+        # First try database
         db_data = _query_database(molecule)
-        data = db_data if db_data else _load_exim_data()
         
         result = None
-        for entry in data:
-            if molecule.lower() in entry.get("molecule", "").lower():
-                result = entry
-                break
+        
+        # If database has results for this molecule, use them
+        if db_data:
+            for entry in db_data:
+                if molecule.lower() in entry.get("molecule", "").lower():
+                    result = entry
+                    break
+        
+        # If not found in DB, search JSON file
+        if not result:
+            json_data = _load_exim_data()
+            for entry in json_data:
+                if molecule.lower() in entry.get("molecule", "").lower():
+                    result = entry
+                    break
         
         if not result:
             return f"No EXIM trade data found for molecule: {molecule}. This API may not be in our database."

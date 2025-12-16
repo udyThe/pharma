@@ -1,0 +1,1209 @@
+﻿
+======================================================================
+  PHARMA AGENTIC AI - GOLDEN TASK VALIDATION
+  2025-12-11 15:37:27
+======================================================================
+
+======================================================================
+  Golden Task 1: Whitespace Analysis
+======================================================================
+C:\Users\Akhil\AppDat
+a\Local\Programs\Pyth
+on\Python311\python.e
+xe : Traceback (most 
+recent call last):
+At line:1 char:1
++ C:\Users\Akhil\AppD
+ata\Local\Programs\Py
+thon\Python311\python
+.exe tes ...
++ ~~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~~~~~~
+~~~~~~~~
+    + CategoryInfo   
+           : NotSpe  
+  cified: (Traceba   
+ ck (most recent     
+call last)::Stri    
+ng) [], RemoteEx    
+ception
+    + FullyQualified 
+   ErrorId : Native  
+  CommandError
+ 
+  File "A:\Projects\P
+harma\test_golden_tas
+ks.py", line 283, in 
+<module>
+    success = main()
+              ^^^^^^
+  File "A:\Projects\P
+harma\test_golden_tas
+ks.py", line 257, in 
+main
+    results.append(("
+Task 1: Whitespace", 
+run_golden_task_1()))
+                     
+                     
+^^^^^^^^^^^^^^^^^^^
+  File "A:\Projects\P
+harma\test_golden_tas
+ks.py", line 56, in 
+run_golden_task_1
+    from 
+src.tools.iqvia_tool 
+import find_low_compe
+tition_markets
+  File "A:\Projects\P
+harma\src\tools\__ini
+t__.py", line 2, in 
+<module>
+    from .iqvia_tool 
+import 
+query_iqvia_market
+  File "A:\Projects\P
+harma\src\tools\iqvia
+_tool.py", line 7, 
+in <module>
+    from 
+crewai.tools import 
+tool
+  File "C:\Users\Akhi
+l\AppData\Local\Progr
+ams\Python\Python311\
+Lib\site-packages\cre
+wai\__init__.py", 
+line 6, in <module>
+    from 
+crewai.agent.core 
+import Agent
+  File "C:\Users\Akhi
+l\AppData\Local\Progr
+ams\Python\Python311\
+Lib\site-packages\cre
+wai\agent\__init__.py
+", line 1, in 
+<module>
+    from 
+crewai.agent.core 
+import Agent
+  File "C:\Users\Akhi
+l\AppData\Local\Progr
+ams\Python\Python311\
+Lib\site-packages\cre
+wai\agent\core.py", 
+line 22, in <module>
+    from crewai.agent
+s.agent_builder.base_
+agent import 
+BaseAgent
+  File "C:\Users\Akhi
+l\AppData\Local\Progr
+ams\Python\Python311\
+Lib\site-packages\cre
+wai\agents\agent_buil
+der\base_agent.py", 
+line 25, in <module>
+    from crewai.knowl
+edge.knowledge 
+import Knowledge
+  File "C:\Users\Akhi
+l\AppData\Local\Progr
+ams\Python\Python311\
+Lib\site-packages\cre
+wai\knowledge\knowled
+ge.py", line 5, in 
+<module>
+    from crewai.knowl
+edge.source.base_know
+ledge_source import 
+BaseKnowledgeSource
+  File "C:\Users\Akhi
+l\AppData\Local\Progr
+ams\Python\Python311\
+Lib\site-packages\cre
+wai\knowledge\source\
+base_knowledge_source
+.py", line 7, in 
+<module>
+    from crewai.knowl
+edge.storage.knowledg
+e_storage import 
+KnowledgeStorage
+  File "C:\Users\Akhi
+l\AppData\Local\Progr
+ams\Python\Python311\
+Lib\site-packages\cre
+wai\knowledge\storage
+\knowledge_storage.py
+", line 7, in 
+<module>
+    from crewai.rag.c
+hromadb.config 
+import ChromaDBConfig
+  File "C:\Users\Akhi
+l\AppData\Local\Progr
+ams\Python\Python311\
+Lib\site-packages\cre
+wai\rag\__init__.py",
+ line 8, in <module>
+    from crewai.rag.c
+onfig.types import 
+RagConfigType
+  File "C:\Users\Akhi
+l\AppData\Local\Progr
+ams\Python\Python311\
+Lib\site-packages\cre
+wai\rag\config\types.
+py", line 27, in 
+<module>
+    from crewai.rag.q
+drant.config import 
+QdrantConfig
+  File "C:\Users\Akhi
+l\AppData\Local\Progr
+ams\Python\Python311\
+Lib\site-packages\cre
+wai\rag\qdrant\config
+.py", line 11, in 
+<module>
+    from crewai.rag.q
+drant.constants 
+import DEFAULT_EMBEDD
+ING_MODEL, 
+DEFAULT_STORAGE_PATH
+  File "C:\Users\Akhi
+l\AppData\Local\Progr
+ams\Python\Python311\
+Lib\site-packages\cre
+wai\rag\qdrant\consta
+nts.py", line 6, in 
+<module>
+    from 
+qdrant_client.models 
+import Distance, 
+VectorParams
+  File "C:\Users\Akhi
+l\AppData\Local\Progr
+ams\Python\Python311\
+Lib\site-packages\qdr
+ant_client\__init__.p
+y", line 1, in 
+<module>
+    from 
+.async_qdrant_client 
+import 
+AsyncQdrantClient as 
+AsyncQdrantClient
+  File "C:\Users\Akhi
+l\AppData\Local\Progr
+ams\Python\Python311\
+Lib\site-packages\qdr
+ant_client\async_qdra
+nt_client.py", line 
+16, in <module>
+    from qdrant_clien
+t.async_client_base 
+import 
+AsyncQdrantBase
+  File "C:\Users\Akhi
+l\AppData\Local\Progr
+ams\Python\Python311\
+Lib\site-packages\qdr
+ant_client\async_clie
+nt_base.py", line 
+13, in <module>
+    from qdrant_clien
+t.conversions import 
+common_types as types
+  File "C:\Users\Akhi
+l\AppData\Local\Progr
+ams\Python\Python311\
+Lib\site-packages\qdr
+ant_client\conversion
+s\common_types.py", 
+line 15, in <module>
+    from 
+qdrant_client.http 
+import models as rest
+  File "C:\Users\Akhi
+l\AppData\Local\Progr
+ams\Python\Python311\
+Lib\site-packages\qdr
+ant_client\http\__ini
+t__.py", line 17, in 
+<module>
+    update_forward_re
+fs(model_class)
+  File "C:\Users\Akhi
+l\AppData\Local\Progr
+ams\Python\Python311\
+Lib\site-packages\qdr
+ant_client\_pydantic_
+compat.py", line 25, 
+in 
+update_forward_refs
+    model_class.model
+_rebuild(*args, 
+**kwargs)
+  File "C:\Users\Akhi
+l\AppData\Local\Progr
+ams\Python\Python311\
+Lib\site-packages\pyd
+antic\main.py", line 
+662, in model_rebuild
+    return _model_con
+struction.complete_mo
+del_class(
+           ^^^^^^^^^^
+^^^^^^^^^^^^^^^^^^^^^
+^^^^^^^^^^
+  File "C:\Users\Akhi
+l\AppData\Local\Progr
+ams\Python\Python311\
+Lib\site-packages\pyd
+antic\_internal\_mode
+l_construction.py", 
+line 597, in 
+complete_model_class
+    schema = gen_sche
+ma.generate_schema(cl
+s)
+             ^^^^^^^^
+^^^^^^^^^^^^^^^^^^^^^
+^^
+  File "C:\Users\Akhi
+l\AppData\Local\Progr
+ams\Python\Python311\
+Lib\site-packages\pyd
+antic\_internal\_gene
+rate_schema.py", 
+line 711, in 
+generate_schema
+    schema = self._ge
+nerate_schema_inner(o
+bj)
+             ^^^^^^^^
+^^^^^^^^^^^^^^^^^^^^^
+^^^
+  File "C:\Users\Akhi
+l\AppData\Local\Progr
+ams\Python\Python311\
+Lib\site-packages\pyd
+antic\_internal\_gene
+rate_schema.py", 
+line 1004, in _genera
+te_schema_inner
+    return self._mode
+l_schema(obj)
+           ^^^^^^^^^^
+^^^^^^^^^^^^^
+  File "C:\Users\Akhi
+l\AppData\Local\Progr
+ams\Python\Python311\
+Lib\site-packages\pyd
+antic\_internal\_gene
+rate_schema.py", 
+line 837, in 
+_model_schema
+    {k: self._generat
+e_md_field_schema(k, 
+v, decorators) for 
+k, v in 
+fields.items()},
+    ^^^^^^^^^^^^^^^^^
+^^^^^^^^^^^^^^^^^^^^^
+^^^^^^^^^^^^^^^^^^^^^
+^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Akhi
+l\AppData\Local\Progr
+ams\Python\Python311\
+Lib\site-packages\pyd
+antic\_internal\_gene
+rate_schema.py", 
+line 837, in 
+<dictcomp>
+    {k: self._generat
+e_md_field_schema(k, 
+v, decorators) for 
+k, v in 
+fields.items()},
+        ^^^^^^^^^^^^^
+^^^^^^^^^^^^^^^^^^^^^
+^^^^^^^^^^^^^^
+  File "C:\Users\Akhi
+l\AppData\Local\Progr
+ams\Python\Python311\
+Lib\site-packages\pyd
+antic\_internal\_gene
+rate_schema.py", 
+line 1206, in _genera
+te_md_field_schema
+    common_field = se
+lf._common_field_sche
+ma(name, field_info, 
+decorators)
+                   ^^
+^^^^^^^^^^^^^^^^^^^^^
+^^^^^^^^^^^^^^^^^^^^^
+^^^^^^^^^^^
+  File "C:\Users\Akhi
+l\AppData\Local\Progr
+ams\Python\Python311\
+Lib\site-packages\pyd
+antic\_internal\_gene
+rate_schema.py", 
+line 1372, in 
+_common_field_schema
+    schema = self._ap
+ply_annotations(
+             ^^^^^^^^
+^^^^^^^^^^^^^^^^
+  File "C:\Users\Akhi
+l\AppData\Local\Progr
+ams\Python\Python311\
+Lib\site-packages\pyd
+antic\_internal\_gene
+rate_schema.py", 
+line 2297, in 
+_apply_annotations
+    schema = get_inne
+r_schema(source_type)
+             ^^^^^^^^
+^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Akhi
+l\AppData\Local\Progr
+ams\Python\Python311\
+Lib\site-packages\pyd
+antic\_internal\_sche
+ma_generation_shared.
+py", line 83, in 
+__call__
+    schema = self._ha
+ndler(source_type)
+             ^^^^^^^^
+^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Akhi
+l\AppData\Local\Progr
+ams\Python\Python311\
+Lib\site-packages\pyd
+antic\_internal\_gene
+rate_schema.py", 
+line 2279, in 
+inner_handler
+    schema = self._ge
+nerate_schema_inner(o
+bj)
+             ^^^^^^^^
+^^^^^^^^^^^^^^^^^^^^^
+^^^
+  File "C:\Users\Akhi
+l\AppData\Local\Progr
+ams\Python\Python311\
+Lib\site-packages\pyd
+antic\_internal\_gene
+rate_schema.py", 
+line 1009, in _genera
+te_schema_inner
+    return 
+self.match_type(obj)
+           
+^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Akhi
+l\AppData\Local\Progr
+ams\Python\Python311\
+Lib\site-packages\pyd
+antic\_internal\_gene
+rate_schema.py", 
+line 1123, in 
+match_type
+    return self._matc
+h_generic_type(obj, 
+origin)
+           ^^^^^^^^^^
+^^^^^^^^^^^^^^^^^^^^^
+^^^^^^
+  File "C:\Users\Akhi
+l\AppData\Local\Progr
+ams\Python\Python311\
+Lib\site-packages\pyd
+antic\_internal\_gene
+rate_schema.py", 
+line 1146, in 
+_match_generic_type
+    return self._unio
+n_schema(obj)
+           ^^^^^^^^^^
+^^^^^^^^^^^^^
+  File "C:\Users\Akhi
+l\AppData\Local\Progr
+ams\Python\Python311\
+Lib\site-packages\pyd
+antic\_internal\_gene
+rate_schema.py", 
+line 1434, in 
+_union_schema
+    choices.append(se
+lf.generate_schema(ar
+g))
+                   ^^
+^^^^^^^^^^^^^^^^^^^^^
+^^
+  File "C:\Users\Akhi
+l\AppData\Local\Progr
+ams\Python\Python311\
+Lib\site-packages\pyd
+antic\_internal\_gene
+rate_schema.py", 
+line 711, in 
+generate_schema
+    schema = self._ge
+nerate_schema_inner(o
+bj)
+             ^^^^^^^^
+^^^^^^^^^^^^^^^^^^^^^
+^^^
+  File "C:\Users\Akhi
+l\AppData\Local\Progr
+ams\Python\Python311\
+Lib\site-packages\pyd
+antic\_internal\_gene
+rate_schema.py", 
+line 1004, in _genera
+te_schema_inner
+    return self._mode
+l_schema(obj)
+           ^^^^^^^^^^
+^^^^^^^^^^^^^
+  File "C:\Users\Akhi
+l\AppData\Local\Progr
+ams\Python\Python311\
+Lib\site-packages\pyd
+antic\_internal\_gene
+rate_schema.py", 
+line 837, in 
+_model_schema
+    {k: self._generat
+e_md_field_schema(k, 
+v, decorators) for 
+k, v in 
+fields.items()},
+    ^^^^^^^^^^^^^^^^^
+^^^^^^^^^^^^^^^^^^^^^
+^^^^^^^^^^^^^^^^^^^^^
+^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Akhi
+l\AppData\Local\Progr
+ams\Python\Python311\
+Lib\site-packages\pyd
+antic\_internal\_gene
+rate_schema.py", 
+line 837, in 
+<dictcomp>
+    {k: self._generat
+e_md_field_schema(k, 
+v, decorators) for 
+k, v in 
+fields.items()},
+        ^^^^^^^^^^^^^
+^^^^^^^^^^^^^^^^^^^^^
+^^^^^^^^^^^^^^
+  File "C:\Users\Akhi
+l\AppData\Local\Progr
+ams\Python\Python311\
+Lib\site-packages\pyd
+antic\_internal\_gene
+rate_schema.py", 
+line 1206, in _genera
+te_md_field_schema
+    common_field = se
+lf._common_field_sche
+ma(name, field_info, 
+decorators)
+                   ^^
+^^^^^^^^^^^^^^^^^^^^^
+^^^^^^^^^^^^^^^^^^^^^
+^^^^^^^^^^^
+  File "C:\Users\Akhi
+l\AppData\Local\Progr
+ams\Python\Python311\
+Lib\site-packages\pyd
+antic\_internal\_gene
+rate_schema.py", 
+line 1372, in 
+_common_field_schema
+    schema = self._ap
+ply_annotations(
+             ^^^^^^^^
+^^^^^^^^^^^^^^^^
+  File "C:\Users\Akhi
+l\AppData\Local\Progr
+ams\Python\Python311\
+Lib\site-packages\pyd
+antic\_internal\_gene
+rate_schema.py", 
+line 2297, in 
+_apply_annotations
+    schema = get_inne
+r_schema(source_type)
+             ^^^^^^^^
+^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Akhi
+l\AppData\Local\Progr
+ams\Python\Python311\
+Lib\site-packages\pyd
+antic\_internal\_sche
+ma_generation_shared.
+py", line 83, in 
+__call__
+    schema = self._ha
+ndler(source_type)
+             ^^^^^^^^
+^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Akhi
+l\AppData\Local\Progr
+ams\Python\Python311\
+Lib\site-packages\pyd
+antic\_internal\_gene
+rate_schema.py", 
+line 2279, in 
+inner_handler
+    schema = self._ge
+nerate_schema_inner(o
+bj)
+             ^^^^^^^^
+^^^^^^^^^^^^^^^^^^^^^
+^^^
+  File "C:\Users\Akhi
+l\AppData\Local\Progr
+ams\Python\Python311\
+Lib\site-packages\pyd
+antic\_internal\_gene
+rate_schema.py", 
+line 1009, in _genera
+te_schema_inner
+    return 
+self.match_type(obj)
+           
+^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Akhi
+l\AppData\Local\Progr
+ams\Python\Python311\
+Lib\site-packages\pyd
+antic\_internal\_gene
+rate_schema.py", 
+line 1123, in 
+match_type
+    return self._matc
+h_generic_type(obj, 
+origin)
+           ^^^^^^^^^^
+^^^^^^^^^^^^^^^^^^^^^
+^^^^^^
+  File "C:\Users\Akhi
+l\AppData\Local\Progr
+ams\Python\Python311\
+Lib\site-packages\pyd
+antic\_internal\_gene
+rate_schema.py", 
+line 1146, in 
+_match_generic_type
+    return self._unio
+n_schema(obj)
+           ^^^^^^^^^^
+^^^^^^^^^^^^^
+  File "C:\Users\Akhi
+l\AppData\Local\Progr
+ams\Python\Python311\
+Lib\site-packages\pyd
+antic\_internal\_gene
+rate_schema.py", 
+line 1434, in 
+_union_schema
+    choices.append(se
+lf.generate_schema(ar
+g))
+                   ^^
+^^^^^^^^^^^^^^^^^^^^^
+^^
+  File "C:\Users\Akhi
+l\AppData\Local\Progr
+ams\Python\Python311\
+Lib\site-packages\pyd
+antic\_internal\_gene
+rate_schema.py", 
+line 711, in 
+generate_schema
+    schema = self._ge
+nerate_schema_inner(o
+bj)
+             ^^^^^^^^
+^^^^^^^^^^^^^^^^^^^^^
+^^^
+  File "C:\Users\Akhi
+l\AppData\Local\Progr
+ams\Python\Python311\
+Lib\site-packages\pyd
+antic\_internal\_gene
+rate_schema.py", 
+line 1009, in _genera
+te_schema_inner
+    return 
+self.match_type(obj)
+           
+^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Akhi
+l\AppData\Local\Progr
+ams\Python\Python311\
+Lib\site-packages\pyd
+antic\_internal\_gene
+rate_schema.py", 
+line 1123, in 
+match_type
+    return self._matc
+h_generic_type(obj, 
+origin)
+           ^^^^^^^^^^
+^^^^^^^^^^^^^^^^^^^^^
+^^^^^^
+  File "C:\Users\Akhi
+l\AppData\Local\Progr
+ams\Python\Python311\
+Lib\site-packages\pyd
+antic\_internal\_gene
+rate_schema.py", 
+line 1150, in 
+_match_generic_type
+    return self._list
+_schema(self._get_fir
+st_arg_or_any(obj))
+           ^^^^^^^^^^
+^^^^^^^^^^^^^^^^^^^^^
+^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Akhi
+l\AppData\Local\Progr
+ams\Python\Python311\
+Lib\site-packages\pyd
+antic\_internal\_gene
+rate_schema.py", 
+line 372, in 
+_list_schema
+    return core_schem
+a.list_schema(self.ge
+nerate_schema(items_t
+ype))
+                     
+              ^^^^^^^
+^^^^^^^^^^^^^^^^^^^^^
+^^^^
+  File "C:\Users\Akhi
+l\AppData\Local\Progr
+ams\Python\Python311\
+Lib\site-packages\pyd
+antic\_internal\_gene
+rate_schema.py", 
+line 711, in 
+generate_schema
+    schema = self._ge
+nerate_schema_inner(o
+bj)
+             ^^^^^^^^
+^^^^^^^^^^^^^^^^^^^^^
+^^^
+  File "C:\Users\Akhi
+l\AppData\Local\Progr
+ams\Python\Python311\
+Lib\site-packages\pyd
+antic\_internal\_gene
+rate_schema.py", 
+line 1009, in _genera
+te_schema_inner
+    return 
+self.match_type(obj)
+           
+^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Akhi
+l\AppData\Local\Progr
+ams\Python\Python311\
+Lib\site-packages\pyd
+antic\_internal\_gene
+rate_schema.py", 
+line 1123, in 
+match_type
+    return self._matc
+h_generic_type(obj, 
+origin)
+           ^^^^^^^^^^
+^^^^^^^^^^^^^^^^^^^^^
+^^^^^^
+  File "C:\Users\Akhi
+l\AppData\Local\Progr
+ams\Python\Python311\
+Lib\site-packages\pyd
+antic\_internal\_gene
+rate_schema.py", 
+line 1146, in 
+_match_generic_type
+    return self._unio
+n_schema(obj)
+           ^^^^^^^^^^
+^^^^^^^^^^^^^
+  File "C:\Users\Akhi
+l\AppData\Local\Progr
+ams\Python\Python311\
+Lib\site-packages\pyd
+antic\_internal\_gene
+rate_schema.py", 
+line 1434, in 
+_union_schema
+    choices.append(se
+lf.generate_schema(ar
+g))
+                   ^^
+^^^^^^^^^^^^^^^^^^^^^
+^^
+  File "C:\Users\Akhi
+l\AppData\Local\Progr
+ams\Python\Python311\
+Lib\site-packages\pyd
+antic\_internal\_gene
+rate_schema.py", 
+line 711, in 
+generate_schema
+    schema = self._ge
+nerate_schema_inner(o
+bj)
+             ^^^^^^^^
+^^^^^^^^^^^^^^^^^^^^^
+^^^
+  File "C:\Users\Akhi
+l\AppData\Local\Progr
+ams\Python\Python311\
+Lib\site-packages\pyd
+antic\_internal\_gene
+rate_schema.py", 
+line 1004, in _genera
+te_schema_inner
+    return self._mode
+l_schema(obj)
+           ^^^^^^^^^^
+^^^^^^^^^^^^^
+  File "C:\Users\Akhi
+l\AppData\Local\Progr
+ams\Python\Python311\
+Lib\site-packages\pyd
+antic\_internal\_gene
+rate_schema.py", 
+line 837, in 
+_model_schema
+    {k: self._generat
+e_md_field_schema(k, 
+v, decorators) for 
+k, v in 
+fields.items()},
+    ^^^^^^^^^^^^^^^^^
+^^^^^^^^^^^^^^^^^^^^^
+^^^^^^^^^^^^^^^^^^^^^
+^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Akhi
+l\AppData\Local\Progr
+ams\Python\Python311\
+Lib\site-packages\pyd
+antic\_internal\_gene
+rate_schema.py", 
+line 837, in 
+<dictcomp>
+    {k: self._generat
+e_md_field_schema(k, 
+v, decorators) for 
+k, v in 
+fields.items()},
+        ^^^^^^^^^^^^^
+^^^^^^^^^^^^^^^^^^^^^
+^^^^^^^^^^^^^^
+  File "C:\Users\Akhi
+l\AppData\Local\Progr
+ams\Python\Python311\
+Lib\site-packages\pyd
+antic\_internal\_gene
+rate_schema.py", 
+line 1206, in _genera
+te_md_field_schema
+    common_field = se
+lf._common_field_sche
+ma(name, field_info, 
+decorators)
+                   ^^
+^^^^^^^^^^^^^^^^^^^^^
+^^^^^^^^^^^^^^^^^^^^^
+^^^^^^^^^^^
+  File "C:\Users\Akhi
+l\AppData\Local\Progr
+ams\Python\Python311\
+Lib\site-packages\pyd
+antic\_internal\_gene
+rate_schema.py", 
+line 1372, in 
+_common_field_schema
+    schema = self._ap
+ply_annotations(
+             ^^^^^^^^
+^^^^^^^^^^^^^^^^
+  File "C:\Users\Akhi
+l\AppData\Local\Progr
+ams\Python\Python311\
+Lib\site-packages\pyd
+antic\_internal\_gene
+rate_schema.py", 
+line 2297, in 
+_apply_annotations
+    schema = get_inne
+r_schema(source_type)
+             ^^^^^^^^
+^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Akhi
+l\AppData\Local\Progr
+ams\Python\Python311\
+Lib\site-packages\pyd
+antic\_internal\_sche
+ma_generation_shared.
+py", line 83, in 
+__call__
+    schema = self._ha
+ndler(source_type)
+             ^^^^^^^^
+^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Akhi
+l\AppData\Local\Progr
+ams\Python\Python311\
+Lib\site-packages\pyd
+antic\_internal\_gene
+rate_schema.py", 
+line 2279, in 
+inner_handler
+    schema = self._ge
+nerate_schema_inner(o
+bj)
+             ^^^^^^^^
+^^^^^^^^^^^^^^^^^^^^^
+^^^
+  File "C:\Users\Akhi
+l\AppData\Local\Progr
+ams\Python\Python311\
+Lib\site-packages\pyd
+antic\_internal\_gene
+rate_schema.py", 
+line 1009, in _genera
+te_schema_inner
+    return 
+self.match_type(obj)
+           
+^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Akhi
+l\AppData\Local\Progr
+ams\Python\Python311\
+Lib\site-packages\pyd
+antic\_internal\_gene
+rate_schema.py", 
+line 1123, in 
+match_type
+    return self._matc
+h_generic_type(obj, 
+origin)
+           ^^^^^^^^^^
+^^^^^^^^^^^^^^^^^^^^^
+^^^^^^
+  File "C:\Users\Akhi
+l\AppData\Local\Progr
+ams\Python\Python311\
+Lib\site-packages\pyd
+antic\_internal\_gene
+rate_schema.py", 
+line 1146, in 
+_match_generic_type
+    return self._unio
+n_schema(obj)
+           ^^^^^^^^^^
+^^^^^^^^^^^^^
+  File "C:\Users\Akhi
+l\AppData\Local\Progr
+ams\Python\Python311\
+Lib\site-packages\pyd
+antic\_internal\_gene
+rate_schema.py", 
+line 1434, in 
+_union_schema
+    choices.append(se
+lf.generate_schema(ar
+g))
+                   ^^
+^^^^^^^^^^^^^^^^^^^^^
+^^
+  File "C:\Users\Akhi
+l\AppData\Local\Progr
+ams\Python\Python311\
+Lib\site-packages\pyd
+antic\_internal\_gene
+rate_schema.py", 
+line 711, in 
+generate_schema
+    schema = self._ge
+nerate_schema_inner(o
+bj)
+             ^^^^^^^^
+^^^^^^^^^^^^^^^^^^^^^
+^^^
+  File "C:\Users\Akhi
+l\AppData\Local\Progr
+ams\Python\Python311\
+Lib\site-packages\pyd
+antic\_internal\_gene
+rate_schema.py", 
+line 1004, in _genera
+te_schema_inner
+    return self._mode
+l_schema(obj)
+           ^^^^^^^^^^
+^^^^^^^^^^^^^
+  File "C:\Users\Akhi
+l\AppData\Local\Progr
+ams\Python\Python311\
+Lib\site-packages\pyd
+antic\_internal\_gene
+rate_schema.py", 
+line 837, in 
+_model_schema
+    {k: self._generat
+e_md_field_schema(k, 
+v, decorators) for 
+k, v in 
+fields.items()},
+    ^^^^^^^^^^^^^^^^^
+^^^^^^^^^^^^^^^^^^^^^
+^^^^^^^^^^^^^^^^^^^^^
+^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Akhi
+l\AppData\Local\Progr
+ams\Python\Python311\
+Lib\site-packages\pyd
+antic\_internal\_gene
+rate_schema.py", 
+line 837, in 
+<dictcomp>
+    {k: self._generat
+e_md_field_schema(k, 
+v, decorators) for 
+k, v in 
+fields.items()},
+        ^^^^^^^^^^^^^
+^^^^^^^^^^^^^^^^^^^^^
+^^^^^^^^^^^^^^
+  File "C:\Users\Akhi
+l\AppData\Local\Progr
+ams\Python\Python311\
+Lib\site-packages\pyd
+antic\_internal\_gene
+rate_schema.py", 
+line 1206, in _genera
+te_md_field_schema
+    common_field = se
+lf._common_field_sche
+ma(name, field_info, 
+decorators)
+                   ^^
+^^^^^^^^^^^^^^^^^^^^^
+^^^^^^^^^^^^^^^^^^^^^
+^^^^^^^^^^^
+  File "C:\Users\Akhi
+l\AppData\Local\Progr
+ams\Python\Python311\
+Lib\site-packages\pyd
+antic\_internal\_gene
+rate_schema.py", 
+line 1372, in 
+_common_field_schema
+    schema = self._ap
+ply_annotations(
+             ^^^^^^^^
+^^^^^^^^^^^^^^^^
+  File "C:\Users\Akhi
+l\AppData\Local\Progr
+ams\Python\Python311\
+Lib\site-packages\pyd
+antic\_internal\_gene
+rate_schema.py", 
+line 2297, in 
+_apply_annotations
+    schema = get_inne
+r_schema(source_type)
+             ^^^^^^^^
+^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Akhi
+l\AppData\Local\Progr
+ams\Python\Python311\
+Lib\site-packages\pyd
+antic\_internal\_sche
+ma_generation_shared.
+py", line 83, in 
+__call__
+    schema = self._ha
+ndler(source_type)
+             ^^^^^^^^
+^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Akhi
+l\AppData\Local\Progr
+ams\Python\Python311\
+Lib\site-packages\pyd
+antic\_internal\_gene
+rate_schema.py", 
+line 2279, in 
+inner_handler
+    schema = self._ge
+nerate_schema_inner(o
+bj)
+             ^^^^^^^^
+^^^^^^^^^^^^^^^^^^^^^
+^^^
+  File "C:\Users\Akhi
+l\AppData\Local\Progr
+ams\Python\Python311\
+Lib\site-packages\pyd
+antic\_internal\_gene
+rate_schema.py", 
+line 1009, in _genera
+te_schema_inner
+    return 
+self.match_type(obj)
+           
+^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Akhi
+l\AppData\Local\Progr
+ams\Python\Python311\
+Lib\site-packages\pyd
+antic\_internal\_gene
+rate_schema.py", 
+line 1123, in 
+match_type
+    return self._matc
+h_generic_type(obj, 
+origin)
+           ^^^^^^^^^^
+^^^^^^^^^^^^^^^^^^^^^
+^^^^^^
+  File "C:\Users\Akhi
+l\AppData\Local\Progr
+ams\Python\Python311\
+Lib\site-packages\pyd
+antic\_internal\_gene
+rate_schema.py", 
+line 1146, in 
+_match_generic_type
+    return self._unio
+n_schema(obj)
+           ^^^^^^^^^^
+^^^^^^^^^^^^^
+  File "C:\Users\Akhi
+l\AppData\Local\Progr
+ams\Python\Python311\
+Lib\site-packages\pyd
+antic\_internal\_gene
+rate_schema.py", 
+line 1434, in 
+_union_schema
+    choices.append(se
+lf.generate_schema(ar
+g))
+                   ^^
+^^^^^^^^^^^^^^^^^^^^^
+^^
+  File "C:\Users\Akhi
+l\AppData\Local\Progr
+ams\Python\Python311\
+Lib\site-packages\pyd
+antic\_internal\_gene
+rate_schema.py", 
+line 711, in 
+generate_schema
+    schema = self._ge
+nerate_schema_inner(o
+bj)
+             ^^^^^^^^
+^^^^^^^^^^^^^^^^^^^^^
+^^^
+  File "C:\Users\Akhi
+l\AppData\Local\Progr
+ams\Python\Python311\
+Lib\site-packages\pyd
+antic\_internal\_gene
+rate_schema.py", 
+line 988, in _generat
+e_schema_inner
+    return self._anno
+tated_schema(obj)
+           ^^^^^^^^^^
+^^^^^^^^^^^^^^^^^
+  File "C:\Users\Akhi
+l\AppData\Local\Progr
+ams\Python\Python311\
+Lib\site-packages\pyd
+antic\_internal\_gene
+rate_schema.py", 
+line 2251, in 
+_annotated_schema
+    schema = self._ap
+ply_annotations(sourc
+e_type, annotations)
+             ^^^^^^^^
+^^^^^^^^^^^^^^^^^^^^^
+^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Akhi
+l\AppData\Local\Progr
+ams\Python\Python311\
+Lib\site-packages\pyd
+antic\_internal\_gene
+rate_schema.py", 
+line 2297, in 
+_apply_annotations
+    schema = get_inne
+r_schema(source_type)
+             ^^^^^^^^
+^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Akhi
+l\AppData\Local\Progr
+ams\Python\Python311\
+Lib\site-packages\pyd
+antic\_internal\_sche
+ma_generation_shared.
+py", line 83, in 
+__call__
+    schema = self._ha
+ndler(source_type)
+             ^^^^^^^^
+^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Akhi
+l\AppData\Local\Progr
+ams\Python\Python311\
+Lib\site-packages\pyd
+antic\_internal\_gene
+rate_schema.py", 
+line 2373, in 
+new_handler
+    schema = get_inne
+r_schema(source)
+             ^^^^^^^^
+^^^^^^^^^^^^^^^^
+  File "C:\Users\Akhi
+l\AppData\Local\Progr
+ams\Python\Python311\
+Lib\site-packages\pyd
+antic\_internal\_sche
+ma_generation_shared.
+py", line 83, in 
+__call__
+    schema = self._ha
+ndler(source_type)
+             ^^^^^^^^
+^^^^^^^^^^^^^^^^^^
+MemoryError

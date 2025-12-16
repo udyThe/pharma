@@ -2,6 +2,7 @@
 Patent Landscape Tool
 Queries database for patent expiry and FTO analysis.
 """
+import json
 from datetime import datetime
 from crewai.tools import tool
 import sys
@@ -22,11 +23,28 @@ def _extract_molecule_from_query(query: str) -> str:
     
     query_lower = query.lower()
     
+    # Brand name mappings
+    brand_to_molecule = {
+        "dolo": "Paracetamol", "dolo650": "Paracetamol", "dolo 650": "Paracetamol",
+        "keytruda": "Pembrolizumab", "januvia": "Sitagliptin",
+        "xarelto": "Rivaroxaban", "esbriet": "Pirfenidone",
+        "spiriva": "Tiotropium", "humira": "Adalimumab",
+        "ozempic": "Semaglutide", "wegovy": "Semaglutide",
+        "herceptin": "Trastuzumab", "revlimid": "Lenalidomide",
+        "flovent": "Fluticasone", "xolair": "Omalizumab"
+    }
+    
+    for brand, mol in brand_to_molecule.items():
+        if brand in query_lower:
+            return mol
+    
     # Known molecules in our database
     known_molecules = [
         "pembrolizumab", "sitagliptin", "rivaroxaban", "pirfenidone",
         "roflumilast", "tiotropium", "omalizumab", "fluticasone",
-        "metformin", "trastuzumab", "ozempic", "semaglutide"
+        "metformin", "trastuzumab", "semaglutide", "adalimumab",
+        "paracetamol", "azithromycin", "pantoprazole", "atorvastatin",
+        "escitalopram", "montelukast", "lenalidomide", "amlodipine"
     ]
     
     # Check for known molecules
@@ -110,6 +128,29 @@ def _query_database(molecule: str = None):
     except Exception as e:
         print(f"Database query error: {e}")
         return None
+
+
+def _load_patent_data() -> list:
+    """Load patent data from JSON file, merging with DB if available."""
+    all_data = []
+    
+    # Try database first
+    db_data = _query_database()
+    if db_data:
+        all_data.extend(db_data)
+    
+    # Always also load JSON file for complete data
+    data_path = Path(__file__).resolve().parent.parent.parent / "mock_data" / "uspto_patents.json"
+    if data_path.exists():
+        with open(data_path, "r") as f:
+            json_data = json.load(f)
+            # Add JSON entries that aren't already in DB data
+            existing_molecules = {d.get("molecule", "").lower() for d in all_data}
+            for entry in json_data:
+                if entry.get("molecule", "").lower() not in existing_molecules:
+                    all_data.append(entry)
+    
+    return all_data
 
 
 def _fetch_and_cache_drug_info(molecule: str) -> dict:
@@ -219,8 +260,11 @@ def query_patents(molecule: str = None, query: str = None) -> str:
             if not molecule:
                 molecule = query or "unspecified molecule"
         
-        # First, try database
-        data = _query_database(molecule)
+        # Load all data (DB + JSON)
+        all_data = _load_patent_data()
+        
+        # Filter by molecule
+        data = [d for d in all_data if molecule.lower() in d.get("molecule", "").lower()]
         
         if data:
             result = data[0]  # Get first matching molecule
@@ -326,7 +370,11 @@ def check_patent_expiry(molecule: str = None, country: str = "US", query: str = 
             if not molecule:
                 molecule = query or "unspecified molecule"
         
-        data = _query_database(molecule)
+        # Load all data (DB + JSON)
+        all_data = _load_patent_data()
+        
+        # Filter by molecule
+        data = [d for d in all_data if molecule.lower() in d.get("molecule", "").lower()]
         
         if not data:
             # Try external APIs for drug information
@@ -431,10 +479,14 @@ def assess_fto_risk(molecule: str = None, query: str = None) -> str:
         if not molecule:
             molecule = query or "unspecified molecule"
         
-        data = _query_database(molecule)
+        # Load all data (DB + JSON)
+        all_data = _load_patent_data()
+        
+        # Filter by molecule
+        data = [d for d in all_data if molecule.lower() in d.get("molecule", "").lower()]
         
         if not data:
-            return f"No patent data found for {molecule}. FTO risk: UNCLEAR - molecule not in database."
+            return f"No patent data found for {molecule}. FTO risk: UNCLEAR. Try: Pembrolizumab, Sitagliptin, Rivaroxaban, Semaglutide."
         
         result = data[0]
         today = datetime.now()

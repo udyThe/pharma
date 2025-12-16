@@ -1,6 +1,6 @@
 # Pharma Agentic AI - Dependencies
-# CrewAI Framework
-crewai>=0.36.0
+# CrewAI Framework - pinned to avoid pydantic conflicts
+crewai==0.80.0
 crewai-tools>=0.4.0
 
 # LLM Provider
@@ -10,7 +10,7 @@ langchain-groq>=0.0.1
 # API Framework
 fastapi>=0.109.0
 uvicorn>=0.27.0
-pydantic>=2.5.0
+pydantic>=2.5.0,<2.10.0
 
 # Frontend
 streamlit>=1.31.0

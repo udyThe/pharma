@@ -6,10 +6,11 @@ import streamlit as st
 import sys
 from pathlib import Path
 from datetime import datetime
-from src.services.data_provider import fetch_market_data, fetch_patent_data, fetch_clinical_data
 
 # Add src to path
 sys.path.insert(0, str(Path(__file__).parent.parent / "src"))
+
+from src.services.data_provider import fetch_market_data, fetch_patent_data, fetch_clinical_data
 
 st.set_page_config(
     page_title="Dashboard - Pharma AI",

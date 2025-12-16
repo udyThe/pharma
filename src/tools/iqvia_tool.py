@@ -83,7 +83,10 @@ def _extract_entity_from_query(query: str, entity_type: str = "molecule") -> str
 
 
 def _load_iqvia_data() -> list:
-    """Load IQVIA market data from database, fallback to JSON."""
+    """Load IQVIA market data from JSON file, with optional DB merge."""
+    all_data = []
+    
+    # First try database
     try:
         from ..database.db import get_db_session
         from ..database.models import MarketData
@@ -91,8 +94,8 @@ def _load_iqvia_data() -> list:
         with get_db_session() as db:
             records = db.query(MarketData).all()
             if records:
-                return [
-                    {
+                for r in records:
+                    all_data.append({
                         "molecule": r.molecule,
                         "region": r.region,
                         "therapy_area": r.therapy_area,
@@ -103,18 +106,22 @@ def _load_iqvia_data() -> list:
                         "generic_penetration": r.generic_penetration,
                         "patient_burden": r.patient_burden,
                         "competition_level": r.competition_level
-                    }
-                    for r in records
-                ]
+                    })
     except Exception:
         pass
     
-    # Fallback to JSON file
+    # Always also load JSON file and merge (JSON has more data)
     data_path = Path(__file__).resolve().parent.parent.parent / "mock_data" / "iqvia_market_data.json"
     if data_path.exists():
         with open(data_path, "r") as f:
-            return json.load(f)
-    return []
+            json_data = json.load(f)
+            # Add JSON entries that aren't already in DB data
+            existing_molecules = {d.get("molecule", "").lower() for d in all_data}
+            for entry in json_data:
+                if entry.get("molecule", "").lower() not in existing_molecules:
+                    all_data.append(entry)
+    
+    return all_data
 
 
 @tool("Query IQVIA Market Data")
